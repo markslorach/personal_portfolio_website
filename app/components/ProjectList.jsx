@@ -9,8 +9,10 @@ export const ProjectList = () => {
     });
 
   return (
-    <div>
+    <main id='projects'>
+    <div className='flex gap-5 justify-center flex-wrap min-h-screen items-center'>
       {projectList}
     </div>
+    </main>
   )
 }

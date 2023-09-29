@@ -15,6 +15,8 @@ const ProjectDetails = ({ params: {id} }) => {
         <p>{project.description}</p>
       </div>
     </main>
+
+    
   );
 };
 

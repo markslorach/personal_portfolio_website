@@ -10,7 +10,7 @@ export const ProjectList = () => {
 
   return (
     <main id='projects'>
-    <div className='flex gap-5 justify-center flex-wrap min-h-screen items-center'>
+    <div className='flex gap-5 justify-center flex-wrap h-60 items-center'>
       {projectList}
     </div>
     </main>

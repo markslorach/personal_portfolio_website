@@ -10,7 +10,7 @@ export const ProjectCard = ({ project }) => {
         <button>View Project</button>
       </Link> */}
 
-      <div className="card w-96 h-96 bg-base-100 shadow-xl rounded-md">
+      {/* <div className="card w-96 h-96 bg-base-100 shadow-xl rounded-md">
         <figure>
           <img
             src="https://thumbs.dreamstime.com/z/projects-concept-black-chalkboard-d-rendering-handwritten-top-view-office-desk-lot-business-office-supplies-79906734.jpg?w=992"
@@ -28,7 +28,7 @@ export const ProjectCard = ({ project }) => {
         <Link href={`/projects/${project.id}`}>
           <button>View Project</button>
         </Link>
-      </div>
+      </div> */}
     </section>
 
     

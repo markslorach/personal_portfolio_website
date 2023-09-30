@@ -21,6 +21,34 @@
   100% { transform: rotate( 0.0deg) }
 }
 
+.nav-container {
+  @apply flex justify-between items-center py-6 bg-slate-100 dark:bg-slate-900;
+}
+
+.nav-logo {
+  @apply text-lg font-bold tracking-wide text-black/80 dark:text-white/80;
+}
+
+.nav-logo-span {
+  @apply text-black/60 dark:text-white/60;
+}
+
+.nav-links-container {
+  @apply flex gap-6 text-black/80 items-center;
+}
+
+.nav-links {
+  @apply text-base font-normal tracking-wide hover:text-black/50 dark:text-white/80 dark:hover:text-white/60;
+}
+
 .hero-title {
-  @apply text-5xl font-bold text-gray-700;
+  @apply text-3xl font-bold tracking-wide mb-4 text-black/70 dark:text-white/80;
+}
+
+.light-mode-toggle {
+  @apply p-2 ml-2 bg-slate-700 rounded-lg;
+}
+
+.dark-mode-toggle {
+  @apply p-2 ml-2 bg-slate-200 rounded-lg;
 }

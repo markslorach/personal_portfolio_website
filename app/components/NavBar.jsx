@@ -13,10 +13,9 @@ export const NavBar = () => {
        
 
         <div className="nav-links-container">
-          <Link className="nav-links" href="/about">about</Link>
-          <Link className="nav-links" href="#projects">projects</Link>
-          <Link className="nav-links" href="/contact">contact</Link>
-         
+          <Link className="nav-links" href="/about">About</Link>
+          <Link className="nav-links" href="#projects">Projects</Link>
+          <Link className="nav-links" href="/contact">Contact</Link>
           <ThemeButton/>
         </div>
       </div>

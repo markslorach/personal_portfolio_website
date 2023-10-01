@@ -9,10 +9,11 @@ export const ProjectList = () => {
     });
 
   return (
-    <main id='projects'>
-    <div className='flex gap-5 justify-center flex-wrap h-60 items-center'>
+    <section>
+    <h2 className='text-xl font-semibold text-black/70 dark:text-white/80 tracking-wide'>Recent projects</h2>
+    <div className='h-60'>
       {projectList}
     </div>
-    </main>
+    </section>
   )
 }

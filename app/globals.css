@@ -10,7 +10,7 @@
 }
 
 .nav-logo {
-  @apply text-lg font-bold tracking-wide text-black/80 dark:text-white/80;
+  @apply text-xl font-bold tracking-wide text-black/80 dark:text-white/80;
 }
 
 .nav-logo-span {
@@ -22,22 +22,23 @@
 }
 
 .nav-links {
-  @apply text-base font-normal tracking-wide hover:text-black/50 dark:text-white/80 dark:hover:text-white/60;
+  @apply text-lg font-light tracking-wide hover:text-black/50 dark:text-white/80 dark:hover:text-white/60;
 }
 
 .hero-title {
-  @apply text-3xl font-semibold tracking-wide text-black/70 dark:text-white/80;
+  @apply text-4xl font-semibold tracking-wide text-black/70 dark:text-white/80;
 }
 
 .light-mode-toggle {
-  @apply p-1.5 ml-2 bg-slate-700 rounded-md;
+  @apply p-2 ml-2 bg-slate-700 rounded-md;
 }
 
 .dark-mode-toggle {
-  @apply p-1.5 ml-2 bg-slate-200 rounded-md;
+  @apply p-2 ml-2 bg-slate-200 rounded-md;
 }
 
 /* CODE BOX */
+/* main styling within CodeBox component */
 
 .blink {
   -webkit-animation: blink-animation 1.2s steps(5, start) infinite;

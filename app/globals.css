@@ -22,7 +22,7 @@
 }
 
 .nav-links {
-  @apply text-base font-light tracking-wide hover:text-black/50 dark:text-white/80 dark:hover:text-white/60;
+  @apply text-base font-normal tracking-wide hover:text-black/50 dark:text-white/80 dark:hover:text-white/60;
 }
 
 .hero-title {

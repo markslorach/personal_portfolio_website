@@ -23,9 +23,8 @@ const ProjectDetails = ({ params: {id} }) => {
           <div className="pt-20 pb-10">
           <img src={project.image} alt={project.name} className="w-full rounded-md" />
           </div>
-          
-          <h1 className="text-lg font-semibold mb-1 text-black/70 dark:text-white/80 tracking-wide">{project.name}</h1>
-          <p className="py-5 text-base font-light tracking-wide leading-relaxed	text-white/80">{project.description}</p>
+          <h1 className="text-2xl font-semibold mb-1 text-black/70 dark:text-white/80 tracking-wide">{project.name}</h1>
+          <p className="py-5 text-base font-light tracking-wide leading-relaxed	text-white/80">{project.information}</p>
           </div>
           <hr/>
         <div className="flex justify-between mt-3">

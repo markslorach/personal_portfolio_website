@@ -8,9 +8,9 @@ export const ProjectCard = ({ project }) => {
     <article>
     <div className="flex gap-5 pt-6 pb-4">
       <img src={project.image} alt={project.name} className="w-1/2 rounded-md shadow-md" />
-      <div className="flex flex-col justify-between tracking-wide text-white/80 pb-3">
+      <div className="flex flex-col justify-between tracking-wide text-black/70 dark:text-white/80 pb-3">
       <h2 className="leading-none text-lg font-medium">{project.name}</h2>
-      <p className="text-base font-light">{project.description.slice(0, 100)}...</p>
+      <p className="text-base font-light text-black/60 dark:text-white/50">{project.description}</p>
           
       <Link className="flex items-center gap-2 font-light leading-none hover:text-white/60" href={`/projects/${project.id}`}>
         <p>View project</p>

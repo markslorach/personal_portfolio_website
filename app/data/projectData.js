@@ -1,7 +1,7 @@
 export const projectData = [
     {
       id: 1,
-      name: "MoneyMate Spending Tracker",
+      name: "Spending Tracker",
       image: "/images/moneymate.png",
       description: "An easy to use spending tracker built using Python, Flask and PostgreSQL.",
       information: "",
@@ -11,7 +11,7 @@ export const projectData = [
       id: 2,
       name: "CarbonFootprint Tracker",
       image: "/images/carbonfootprint.png",
-      description: "Track and offset your carbon footprint with this flight emissions tracker built using React and MongoDB.",
+      description: "Track and offset your carbon footprint with this flight emissions tracker built using React, Express and MongoDB.",
       information: "",
       technologies: ["React", "Node", "Express", "MongoDB"]
     },

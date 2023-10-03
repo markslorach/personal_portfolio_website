@@ -12,8 +12,8 @@ const CodeBox = () => {
         </div>
         <div className="flex flex-col gap-5 w-full h-full p-5 font-mono text-sm text-black/70 dark:text-white/80">
           <div className="flex flex-col gap-2 ">
-            <p>{`> Mark.contactInfo`}</p>
-            <p><span>{`[`}</span>"<span className="code-box-link">{`hello@markslorach.com`}</span>", "<span className="code-box-link"><Link className='hover:text-blue-200' target='_blank' href={"https://www.linkedin.com/in/mfslorach/"}>{`LinkedIn`}</Link></span>", "<span className="code-box-link"><Link className='hover:text-blue-200' target='_blank' href={"https://github.com/mfslorach"}>{`GitHub`}</Link></span>"<span>{`]`}</span> </p>
+            <p>{`> Mark.contact`}</p>
+            <p><span>{`[`}</span>"<span className="code-box-links">{`hello@markslorach.com`}</span>", "<span className="code-box-links"><Link className='hover:text-blue-200' target='_blank' href={"https://www.linkedin.com/in/mfslorach/"}>{`LinkedIn`}</Link></span>", "<span className="code-box-links"><Link className='hover:text-blue-200' target='_blank' href={"https://github.com/mfslorach"}>{`GitHub`}</Link></span>"<span>{`]`}</span> </p>
           </div>
           <div className="flex flex-col gap-2 ">
             <p>{`> Mark.resume`}</p>

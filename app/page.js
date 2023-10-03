@@ -5,7 +5,7 @@ import { ProjectList } from "./components/ProjectList";
 
 const Home = () => {
   return (
-    <main>
+    <main >
       <div className="flex justify-center w-screen px-16">
         <div className="w-[680px] flex flex-col">
           <NavBar/>

@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className="!scroll-smooth" suppressHydrationWarning>
       <body className={`${poppins.className}`}>
         <Providers>
-          <main className="bg-slate-50 dark:bg-slate-900 min-h-screen">
+          <main className="bg-colour">
             {children}
             <Footer />
           </main>

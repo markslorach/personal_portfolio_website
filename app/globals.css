@@ -2,11 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+/* MAIN STYLES */
+.bg-colour {
+  @apply bg-slate-200 dark:bg-slate-800 min-h-screen;
+}
+
+
+/* DARK MODE TOGGLES */
+.light-mode-toggle {
+  @apply p-2 ml-2 bg-slate-700 rounded-md;
+}
+
+.dark-mode-toggle {
+  @apply p-2 ml-2 bg-slate-300 rounded-md;
+}
 
 /* NAVIGATION */
-
 .nav-container {
-  @apply flex justify-between items-center py-6 bg-slate-50 dark:bg-slate-900;
+  @apply flex justify-between items-center py-6;
 }
 
 .nav-logo {
@@ -25,20 +38,38 @@
   @apply text-base font-light tracking-wide hover:text-black/50 dark:text-white/80 dark:hover:text-white/60;
 }
 
+/* HERO SECTION */
+.hero-container {
+  @apply flex flex-col gap-4 py-20
+}
+
+.hero-image {
+  @apply rounded-3xl -ml-2
+}
+
 .hero-title {
   @apply text-4xl font-semibold tracking-wide text-black/70 dark:text-white/80;
 }
 
-.light-mode-toggle {
-  @apply p-2 ml-2 bg-slate-700 rounded-md;
+.text-gradient {
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400;
 }
 
-.dark-mode-toggle {
-  @apply p-2 ml-2 bg-slate-200 rounded-md;
+/* FOOTER */
+.footer-container {
+  @apply flex justify-center py-20;
+}
+
+.footer-text {
+  @apply text-sm text-black/20 dark:text-white/20;
 }
 
 /* CODE BOX */
 /* main styling within CodeBox component */
+
+.code-box-links {
+  @apply text-blue-400
+}
 
 .blink {
   -webkit-animation: blink-animation 1.2s steps(5, start) infinite;
@@ -55,6 +86,3 @@
   }
 }
 
-.code-box-link {
-  @apply text-blue-400
-}

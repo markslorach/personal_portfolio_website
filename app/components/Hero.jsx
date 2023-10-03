@@ -17,18 +17,18 @@ const animateHero = {
 export const Hero = () => {
   return (
     <section>
-      <div className="flex flex-col gap-4 py-20">
+      <div className="hero-container">
         <motion.div variants={animateHero} initial="hidden" animate="show">
           <Image
             src="/images/me.png"
             width={75}
             height={75}
             alt="Mark Slorach"
-            className="rounded-3xl -ml-2"
+            className="hero-image"
           />
         </motion.div>
         <motion.h1 className="hero-title" variants={animateHero} initial="hidden" animate="show">
-          Hello! I'm Mark, a design and user experience focused full-stack software developer based in <span className="text-blue-400"> Scotland</span>.
+          Hello! I'm Mark, a design and user experience focused junior software developer based in <span className="text-gradient"> Scotland</span>.
         </motion.h1>
       </div>
     </section>

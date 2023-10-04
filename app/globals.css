@@ -17,6 +17,14 @@
   @apply p-2 ml-2 bg-slate-300 rounded-md;
 }
 
+.moon {
+  @apply opacity-60 group-hover:-rotate-12 transition duration-500 ease-in-out
+}
+
+.sun {
+  @apply text-white/70 group-hover:-rotate-12 transition duration-500 ease-in-out
+}
+
 /* NAVIGATION */
 .nav-container {
   @apply flex justify-between items-center py-6;
@@ -35,7 +43,7 @@
 }
 
 .nav-links {
-  @apply text-base font-light tracking-wide hover:text-black/50 dark:text-white/80 dark:hover:text-white/60;
+  @apply text-base font-light tracking-wide hover:text-black/50 dark:text-white/80 dark:hover:text-white/60 transition duration-200 ease-in;
 }
 
 /* HERO SECTION */

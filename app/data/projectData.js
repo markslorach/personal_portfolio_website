@@ -5,6 +5,7 @@ export const projectData = [
       image: "/images/moneymate.png",
       description: "An easy to use spending tracker built using Python, Flask and PostgreSQL.",
       information: "",
+      github: "https://github.com/mfslorach/money_tracker_project",
       technologies: ["Python", "Flask", "PostgreSQL"]
     },
     {
@@ -13,6 +14,7 @@ export const projectData = [
       image: "/images/carbonfootprint.png",
       description: "Track and offset your carbon footprint with this flight emissions tracker built using React, Express and MongoDB.",
       information: "",
+      github: "https://github.com/mfslorach/javascript_group_project",
       technologies: ["React", "Node", "Express", "MongoDB"]
     },
     {
@@ -21,5 +23,6 @@ export const projectData = [
       image: "/images/codecrush.png",
       description: "Practice your coding skills with a daily challenge. Built using Next JS,  Java and PostgreSQL.",
       information: "",
+      github: "https://github.com/mfslorach/codecrush_codeclan_capstone_project",
       technologies: ["Next JS", "Java", "PostgreSQL", "Tailwind CSS"]
     }];

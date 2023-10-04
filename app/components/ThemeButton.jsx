@@ -19,14 +19,14 @@ const ThemeButton = () => {
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
     >
       {resolvedTheme === "dark" ? (
-        <div className="light-mode-toggle">
-          <p className="text-white/70">
+        <div className="light-mode-toggle group">
+          <p className="sun">
             <RiSunFill />
           </p>
         </div>
       ) : (
-        <div className="dark-mode-toggle">
-          <p className="opacity-60">
+        <div className="dark-mode-toggle group">
+          <p className="moon">
             <FaMoon />
           </p>
         </div>

@@ -4,7 +4,7 @@ export const projectData = [
       name: "Spending Tracker",
       image: "/images/moneymate.png",
       description: "An easy to use spending tracker built using Python, Flask and PostgreSQL.",
-      information: "",
+      information: "This is a simple spending tracker application that allows users to track their expenses. It allows you to create, edit, and remove merchants and tags for categorising your transactions. You can assign tags and merchants to each transaction along with the amount spent. The app provides a comprehensive view of all your transactions, including the amount, merchant, and tag, as well as a total for all transactions.",
       github: "https://github.com/mfslorach/money_tracker_project",
       technologies: ["Python", "Flask", "PostgreSQL"]
     },

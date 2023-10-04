@@ -9,7 +9,7 @@ import { projectData } from "app/data/projectData";
 const Home = () => {
   return (
     <main >
-      <div className="flex justify-center w-screen px-16">
+      <div className="flex justify-center px-16">
         <div className="w-[680px] flex flex-col">
           <NavBar/>
           <Hero />

@@ -13,10 +13,10 @@ export const NavBar = () => {
         </Link>
 
         <div className="nav-links-container">
-          <Link className="nav-links" href="/about">
-            About
+          <Link className="nav-links" href="/profile">
+            Profile
           </Link>
-          <Link className="nav-links" href="#projects">
+          <Link className="nav-links" href="/projects">
             Projects
           </Link>
           <Link className="nav-links" href="/contact">

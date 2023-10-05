@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -10,9 +10,9 @@ const animateHero = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.5
-    }
-  }
+      duration: 0.5,
+    },
+  },
 };
 
 export const Hero = () => {
@@ -28,10 +28,31 @@ export const Hero = () => {
             className="hero-image"
           />
         </motion.div>
-        <motion.h1 className="hero-title" variants={animateHero} initial="hidden" animate="show">
-          Hello! I'm Mark, a design and user experience focused junior software developer based in <span className="text-blue-400"> Scotland</span>.
+        <motion.h1
+          className="hero-title"
+          variants={animateHero}
+          initial="hidden"
+          animate="show"
+        >
+          Hello!{" "}
+          <span className="text-gradient">
+            <Link href={"/profile"}>I'm Mark</Link>
+          </span>
+          , a design and user experience focused junior{" "}
+          <span className="">software developer</span> based in{" "}
+          <span className=""> Scotland</span>.
         </motion.h1>
-      <motion.p className="hero-profile" variants={animateHero} initial="hidden" animate="show">I am a recent graduate of a 16-week software development bootcamp. I love creating user-friendly applications with a focus on visual and system design. I am currently seeking my first role in the tech industry to help build impactful products and continue to learn and grow as a developer. <Link href={'/profile'}><span className="font-normal text-blue-400 hover:text-blue-300 transition duration-300 ease-in-out">View profile.</span></Link></motion.p>
+        {/* <motion.p
+          className="hero-profile"
+          variants={animateHero}
+          initial="hidden"
+          animate="show"
+        >
+          I love creating user-friendly applications with a focus on visual and
+          system design. I'm seeking my first role in the tech industry to help
+          build impactful products and continue to learn and grow as a
+          developer.
+        </motion.p> */}
       </div>
     </section>
   );

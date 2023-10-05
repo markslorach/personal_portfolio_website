@@ -8,7 +8,23 @@ body {
 
 /* MAIN STYLES */
 .bg-colour {
-  @apply bg-slate-200 dark:bg-slate-800 min-h-screen;
+  @apply bg-slate-100 dark:bg-[#111827] min-h-screen;
+}
+
+.dark-text-primary {
+  @apply dark:text-white/80;
+}
+
+.dark-text-secondary {
+  @apply dark:text-white/60;
+}
+
+.light-text-primary {
+  @apply text-black/70;
+}
+
+.light-text-secondary {
+  @apply text-black/50;
 }
 
 
@@ -31,15 +47,15 @@ body {
 
 /* NAVIGATION */
 .nav-container {
-  @apply flex justify-between items-center py-6;
+  @apply flex justify-between items-center pt-10 pb-6;
 }
 
 .nav-logo {
-  @apply text-xl font-bold tracking-wide text-black/80 dark:text-white/80;
+  @apply text-xl font-bold tracking-wide light-text-primary dark-text-primary;
 }
 
 .nav-logo-span {
-  @apply text-black/60 dark:text-white/60;
+  @apply light-text-secondary dark-text-secondary;
 }
 
 .nav-links-container {
@@ -47,7 +63,7 @@ body {
 }
 
 .nav-links {
-  @apply text-base font-light tracking-wide hover:text-black/50 dark:text-white/80 dark:hover:text-white/60 transition duration-200 ease-in;
+  @apply text-base font-normal tracking-wide hover:text-black/80 light-text-secondary dark-text-secondary dark:hover:text-white/90 transition duration-200 ease-in;
 }
 
 /* HERO SECTION */
@@ -60,11 +76,11 @@ body {
 }
 
 .hero-title {
-  @apply text-4xl font-semibold tracking-wide text-black/70 dark:text-white/80;
+  @apply text-4xl font-semibold tracking-wide light-text-primary dark-text-primary;
 }
 
 .hero-profile {
-  @apply tracking-wider font-light text-base leading-normal text-white/80;
+  @apply tracking-wider font-light text-[17px] leading-normal light-text-primary dark-text-secondary mt-1;
 }
 
 .text-gradient {
@@ -73,11 +89,11 @@ body {
 
 /* FOOTER */
 .footer-container {
-  @apply flex justify-center py-20;
+  @apply flex justify-center pt-28 pb-12;
 }
 
 .footer-text {
-  @apply text-sm text-black/20 dark:text-white/20;
+  @apply text-sm text-black/20 dark:text-white/30;
 }
 
 /* CODE BOX */

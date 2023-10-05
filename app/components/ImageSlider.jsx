@@ -37,10 +37,7 @@ export default function ImageSlider({images}) {
     <div className="mt-24">
       <MotionConfig
         transition={{
-          type: "spring",
-          damping: 18,
-          stiffness: 130,
-          duration: 0.4
+          duration: 0.25
         }}
       >
         <motion.div

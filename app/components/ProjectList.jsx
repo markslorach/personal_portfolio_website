@@ -9,7 +9,7 @@ export const ProjectList = () => {
 
   return (
     <section>
-      <h2 className="text-2xl font-semibold mb-6 text-black/70 dark:text-white/80 tracking-wide">
+      <h2 className="text-2xl font-semibold mb-8 light-text-primary dark-text-primary tracking-wide">
         Recent projects
       </h2>
       <div>{projectList}</div>

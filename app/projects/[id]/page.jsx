@@ -1,3 +1,5 @@
+'use client'
+import ImageSlider from "@/app/components/ImageSlider";
 import { NavBar } from "@/app/components/NavBar";
 import { projectData } from "app/data/projectData";
 import Link from "next/link";
@@ -20,8 +22,8 @@ const ProjectDetails = ({ params: {id} }) => {
         <div className="w-[680px] flex flex-col">
           <NavBar/>
           <div className="flex justify-center flex-col">
+            <ImageSlider images={project.images}/>
           <div className="pt-20 pb-10">
-          <img src={project.image} alt={project.name} className="w-full rounded-md" />
           </div>
           <h1 className="text-2xl font-semibold mb-1 text-black/70 dark:text-white/80 tracking-wide">{project.name}</h1>
           <p className="py-5 text-base font-light tracking-wide leading-relaxed	text-white/80">{project.information}</p>
@@ -39,9 +41,7 @@ const ProjectDetails = ({ params: {id} }) => {
             </Link>
           }</div>
         </div>
-        
-      </div>
-      
+      </div>  
     </main> 
   );
 };

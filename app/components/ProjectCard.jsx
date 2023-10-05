@@ -25,7 +25,7 @@ export const ProjectCard = ({ project }) => {
         className="flex gap-5 p-4 mt-6 bg-white/5 rounded-md hover:bg-blue-300/10 transition-colors duration-500 ease-in-out"
       >
         <img
-          src={project.image}
+          src={project.images[0]}
           alt={project.name}
           className="w-1/2 rounded-md shadow-md"
         />

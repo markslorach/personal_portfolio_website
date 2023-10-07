@@ -1,20 +1,23 @@
-'use client'
-import ImageSlider from "@/app/components/ImageSlider";
 import { NavBar } from "@/app/components/NavBar";
-import { projectData } from "app/data/projectData";
-import Link from "next/link";
+import config from "@/app/config";
+import ImageSlider from "@/app/components/ImageSlider";
 
-const ProjectDetails = ({ params: {id} }) => {
+async function getProject(id) {
+    const requestOptions = {
+      Headers: {
+        Authorization: `Bearer ${process.env.API_TOKEN}`,
+      },
+    };
   
-  const projectIndex = projectData.findIndex((project) => project.id === Number(id));
+    const res = await fetch(
+        `${config.api}/api/portfolios/${id}?populate=*`, { next: { revalidate: 60 } },
+        requestOptions
+      );
+      return res.json(); 
+  }
 
-  if (projectIndex === -1) {
-    return <p>Page not found!</p>;
-  };
-
-  const project = projectData[projectIndex];
-  const nextProject = projectData[projectIndex + 1];
-  const prevProject = projectData[projectIndex - 1];
+export default async function ProjectDetails({params}) {
+    const project = await getProject(params.id)
 
   return (
     <main>
@@ -22,28 +25,14 @@ const ProjectDetails = ({ params: {id} }) => {
         <div className="w-[680px] flex flex-col">
           <NavBar/>
           <div className="flex justify-center flex-col">
-            <ImageSlider images={project.images}/>
+            <ImageSlider featureImage={`${config.api}${project.data.attributes.FeatureImage.data.attributes.url}`}/>
           <div className="pt-20 pb-10">
           </div>
-          <h1 className="text-2xl font-semibold mb-1 text-black/70 dark:text-white/80 tracking-wide">{project.name}</h1>
-          <p className="py-5 text-base font-light tracking-wide leading-relaxed	text-white/80">{project.information}</p>
+          <h1 className="text-2xl font-semibold mb-1 text-black/70 dark:text-white/80 tracking-wide">{project.data.attributes.Title}</h1>
+          <p className="py-5 text-base font-light tracking-wide leading-relaxed	text-white/80">{project.data.attributes.Content}</p>
           </div>
-          <hr/>
-        <div className="flex justify-between mt-3">
-          <Link href={prevProject ? `/projects/${prevProject.id}` : '/'}>
-            <button className="pb-3 text-normal font-normal tracking-wide hover:text-black/50 dark:text-white/80 dark:hover:text-white/60">
-              {prevProject ? `Previous: ${prevProject.name}` : 'Return home'}
-            </button>
-          </Link>
-          {nextProject && 
-            <Link href={`/projects/${nextProject.id}`}>
-              <button className="pb-3 text-normal font-normal tracking-wide hover:text-black/50 dark:text-white/80 dark:hover:text-white/60">{`Next: ${nextProject.name}`}</button>
-            </Link>
-          }</div>
         </div>
       </div>  
     </main> 
-  );
+  )
 };
-
-export default ProjectDetails;

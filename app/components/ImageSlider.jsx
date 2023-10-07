@@ -1,15 +1,15 @@
+'use client'
 import { useState, useEffect } from "react";
-import { AnimatePresence, motion, MotionConfig } from "framer-motion";
+import { motion } from "framer-motion";
 import { RiArrowLeftSFill, RiArrowRightSFill } from "react-icons/ri";
 
-
-export default function ImageSlider({images}) {
-  let [index, setIndex] = useState(0);
+export default function ImageSlider({ featureImage }) {
+  const [index, setIndex] = useState(0);
 
   const handleKeyPress = (e) => {
     if (e.key === "ArrowLeft" && index > 0) {
       setIndex(index - 1);
-    } else if (e.key === "ArrowRight" && index + 1 < images.length) {
+    } else if (e.key === "ArrowRight" && index + 1 < featureImage.length) {
       setIndex(index + 1);
     }
   };
@@ -35,58 +35,36 @@ export default function ImageSlider({images}) {
 
   return (
     <div className="mt-24">
-      <MotionConfig
-        transition={{
-          duration: 0.25
-        }}
+      <motion.div
+        className="relative overflow-hidden rounded-md"
+        initial="hidden"
+        animate="show"
+        variants={animateImageIn}
       >
-        <motion.div
-          className="relative overflow-hidden rounded-md"
-          initial="hidden"
-          animate="show"
-          variants={animateImageIn}
+        <img src={featureImage} className="w-full" alt="Feature" />
+
+        <motion.button
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 0.7 }}
+          exit={{ opacity: 0, pointerEvents: "none" }}
+          whileHover={{ opacity: 1 }}
+          className="absolute left-2 top-1/2 -mt-4 flex h-8 w-8 items-center justify-center rounded-full bg-white/80"
+          onClick={() => setIndex(index - 1)}
         >
-          <motion.div animate={{ x: `-${index * 100}%` }} className="flex">
-            {images.map((image) => (
-              <img
-                key={image}
-                src={image}
-                className="aspect-[3/1.6] object-cover"
-              />
-            ))}
-          </motion.div>
+          <RiArrowLeftSFill className="h-6 w-6 text-slate-800/80" />
+        </motion.button>
 
-          <AnimatePresence initial={false}>
-            {index > 0 && (
-              <motion.button
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 0.7 }}
-                exit={{ opacity: 0, pointerEvents: "none" }}
-                whileHover={{ opacity: 1 }}
-                className="absolute left-2 top-1/2 -mt-4 flex h-8 w-8 items-center justify-center rounded-full bg-white/80"
-                onClick={() => setIndex(index - 1)}
-              >
-                <RiArrowLeftSFill className="h-6 w-6 text-slate-800/80" />
-              </motion.button>
-            )}
-          </AnimatePresence>
-
-          <AnimatePresence initial={false}>
-            {index + 1 < images.length && (
-              <motion.button
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 0.7 }}
-                exit={{ opacity: 0, pointerEvents: "none" }}
-                whileHover={{ opacity: 1 }}
-                className="absolute right-2 top-1/2 -mt-4 flex h-8 w-8 items-center justify-center rounded-full bg-white/80"
-                onClick={() => setIndex(index + 1)}
-              >
-                <RiArrowRightSFill className="h-6 w-6 text-slate-800/80" />
-              </motion.button>
-            )}
-          </AnimatePresence>
-        </motion.div>
-      </MotionConfig>
+        <motion.button
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 0.7 }}
+          exit={{ opacity: 0, pointerEvents: "none" }}
+          whileHover={{ opacity: 1 }}
+          className="absolute right-2 top-1/2 -mt-4 flex h-8 w-8 items-center justify-center rounded-full bg-white/80"
+          onClick={() => setIndex(index + 1)}
+        >
+          <RiArrowRightSFill className="h-6 w-6 text-slate-800/80" />
+        </motion.button>
+      </motion.div>
     </div>
   );
 }

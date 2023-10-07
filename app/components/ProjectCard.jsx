@@ -1,11 +1,11 @@
 "use client";
-import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { FaGithub } from "react-icons/fa";
 import { BsFillLightningChargeFill } from "react-icons/bs";
 import { RiArrowRightUpLine } from "react-icons/ri";
+import Link from "next/link";
 
-export const ProjectCard = ({ project }) => {
+const ProjectCard = ({ id, title, summary, github, thumbnail }) => {
   const [hasMounted, setHasMounted] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -18,20 +18,20 @@ export const ProjectCard = ({ project }) => {
   }
 
   return (
-    <Link href={`/projects/${project.id}`}>
+    <Link href={`/projects/${id}`}>
       <div
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         className="flex gap-5 p-4 mt-6 bg-white/5 rounded-md hover:bg-blue-300/10 transition-colors duration-500 ease-in-out"
       >
         <img
-          src={project.images[0]}
-          alt={project.name}
+          src={thumbnail}
+          alt={``}
           className="w-1/2 rounded-md shadow-md"
         />
         <div className=" flex flex-col gap-4 tracking-wide text-black/70 dark:text-white/80">
           <h2 className="leading-none text-md font-medium flex gap-1 items-center">
-            {project.name}
+            {title}
             <span
               className={`text-lg ${
                 isHovered ? "translate-x-0.5 -translate-y-0.5" : ""
@@ -41,7 +41,7 @@ export const ProjectCard = ({ project }) => {
             </span>
           </h2>
           <p className="text-sm font-light text-black/60 dark:text-white/50">
-            {project.description}
+            {summary}
           </p>
 
           <div className="flex gap-3">
@@ -49,7 +49,7 @@ export const ProjectCard = ({ project }) => {
               <button
                 onClick={(e) => {
                   e.preventDefault();
-                  window.open(`${project.github}`, "_blank");
+                  window.open(`${github}`, "_blank");
                 }}
                 className="flex items-center gap-2 text-sm font-light leading-none p-2.5 bg-white/10 rounded-md hover:bg-purple-200/20 transition-colors duration-500 ease-in-out"
               >
@@ -74,6 +74,8 @@ export const ProjectCard = ({ project }) => {
           </div>
         </div>
       </div>
-    </Link>
+      </Link>
   );
 };
+
+export default ProjectCard;

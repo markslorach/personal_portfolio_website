@@ -1,18 +1,42 @@
 import React from "react";
-import { projectData } from "../data/projectData";
-import { ProjectCard } from "./ProjectCard";
+import config from "../config";
+import ProjectCard from "./ProjectCard";
 
-export const ProjectList = () => {
-  const projectList = projectData.map((project) => {
-    return <ProjectCard key={project.id} project={project} />;
-  });
+async function getProjects() {
+  const requestOptions = {
+    Headers: {
+      Authorization: `Bearer ${process.env.API_TOKEN}`,
+    },
+  };
+
+  const res = await fetch(
+    `${config.api}/api/portfolios?populate=*`, { next: { revalidate: 0 } },
+    requestOptions, 
+  );
+  return res.json();
+}
+
+export default async function ProjectList() {
+  const projects = await getProjects();
 
   return (
     <section>
       <h2 className="text-2xl font-semibold mb-8 light-text-primary dark-text-primary tracking-wide">
         Recent projects
       </h2>
-      <div>{projectList}</div>
+
+      {projects.data.map((project) => {
+        return (
+          <ProjectCard
+            key={project.id}
+            id={project.id}
+            title={project.attributes.Title}
+            summary={project.attributes.Summary}
+            thumbnail={`${config.api}${project.attributes.Thumbnail.data.attributes.url}`}
+            github={project.attributes.Github}
+          />
+        );
+      })}
     </section>
   );
-};
+}

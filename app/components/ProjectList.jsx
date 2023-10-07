@@ -33,7 +33,7 @@ export default async function ProjectList() {
             title={project.attributes.Title}
             summary={project.attributes.Summary}
             thumbnail={`${config.api}${project.attributes.Thumbnail.data.attributes.url}`}
-            github={project.attributes.Github}
+            github={project.attributes.GitHub}
           />
         );
       })}

@@ -6,16 +6,16 @@ import { RiArrowRightUpLine } from "react-icons/ri";
 import Link from "next/link";
 
 const ProjectCard = ({ id, title, summary, github, thumbnail }) => {
-  // const [hasMounted, setHasMounted] = useState(false);
+  const [hasMounted, setHasMounted] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
-  // useEffect(() => {
-  //   setHasMounted(true);
-  // }, []);
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
 
-  // if (!hasMounted) {
-  //   return null;
-  // }
+  if (!hasMounted) {
+    return null;
+  }
 
   return (
     <Link href={`/projects/${id}`}>

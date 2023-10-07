@@ -16,6 +16,7 @@ const animateHero = {
 };
 
 export const Hero = () => {
+  
   return (
     <section>
       <div className="hero-container">

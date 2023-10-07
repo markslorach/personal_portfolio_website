@@ -10,7 +10,7 @@ async function getProjects() {
   };
 
   const res = await fetch(
-    `${config.api}/api/portfolios?populate=*`, { next: { revalidate: 0 } },
+    `${config.api}/api/portfolios?populate=*`, { next: { revalidate: 60 } },
     requestOptions, 
   );
   return res.json();

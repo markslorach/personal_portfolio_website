@@ -3,11 +3,12 @@ import ProjectCard from "./ProjectCard";
 import { getProjects } from "@/sanity/sanity-utils";
 
 
+export const revalidate = 60;
 
 export default async function ProjectList() {
 
-  const projects = await getProjects();
-  // console.log(projects);
+const projects = await getProjects();
+
 
   return (
     <section>

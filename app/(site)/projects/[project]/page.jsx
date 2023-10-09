@@ -3,9 +3,12 @@ import { NavBar } from "@/app/(site)/components/NavBar";
 import { getProject } from "@/sanity/sanity-utils";
 import { PortableText } from "@portabletext/react";
 
+export const revalidate = 60;
+
 export default async function Project({ params }) {
   const slug = params.project;
   const project = await getProject(slug);
+
 
   return (
     <main>

@@ -6,7 +6,7 @@ import { RiArrowRightUpLine } from "react-icons/ri";
 import Link from "next/link";
 
 
-export const revalidate = 60;
+export const revalidate = 0;
 
 const ProjectCard = ({ slug, title, summary, github, image }) => {
   const [hasMounted, setHasMounted] = useState(false);

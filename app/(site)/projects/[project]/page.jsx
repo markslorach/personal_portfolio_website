@@ -3,7 +3,7 @@ import { NavBar } from "@/app/(site)/components/NavBar";
 import { getProject } from "@/sanity/sanity-utils";
 import { PortableText } from "@portabletext/react";
 
-export const revalidate = 60;
+export const revalidate = 0;
 
 export default async function Project({ params }) {
   const slug = params.project;

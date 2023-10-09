@@ -2,13 +2,10 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import { getProjects } from "@/sanity/sanity-utils";
 
-
 export const revalidate = 60;
 
 export default async function ProjectList() {
-
-const projects = await getProjects();
-
+  const projects = await getProjects();
 
   return (
     <section>
@@ -18,17 +15,14 @@ const projects = await getProjects();
 
       {projects.map((project) => (
         <ProjectCard
-        key={project._id}
-        title={project.title}
-        summary={project.summary}
-        github={project.github}
-        image={project.image}
-        slug={project.slug}
+          key={project._id}
+          title={project.title}
+          summary={project.summary}
+          github={project.github}
+          image={project.image}
+          slug={project.slug}
         />
       ))}
-     
-   
     </section>
   );
 }
-

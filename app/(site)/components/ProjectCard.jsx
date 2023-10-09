@@ -5,18 +5,21 @@ import { BsFillLightningChargeFill } from "react-icons/bs";
 import { RiArrowRightUpLine } from "react-icons/ri";
 import Link from "next/link";
 
+
+export const revalidate = 60;
+
 const ProjectCard = ({ slug, title, summary, github, image }) => {
   const [hasMounted, setHasMounted] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
-
+  
   useEffect(() => {
     setHasMounted(true);
   }, []);
-
+  
   if (!hasMounted) {
     return null;
   }
-
+  
   return (
     <Link href={`/projects/${slug}`}>
       <div

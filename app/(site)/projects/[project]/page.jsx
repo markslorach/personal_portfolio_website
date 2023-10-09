@@ -9,7 +9,6 @@ export default async function Project({ params }) {
   const slug = params.project;
   const project = await getProject(slug);
 
-
   return (
     <main>
       <div className="flex justify-center px-16">

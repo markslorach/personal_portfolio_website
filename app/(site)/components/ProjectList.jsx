@@ -3,6 +3,8 @@ import ProjectCard from "./ProjectCard";
 import { getProjects } from "@/sanity/sanity-utils";
 
 export const revalidate = 0;
+export const dynamic = 'force-dynamic';
+
 
 export default async function ProjectList() {
   const projects = await getProjects();

@@ -3,6 +3,8 @@ import { Hero } from "./components/Hero";
 import { NavBar } from "./components/NavBar";
 import ProjectList from "./components/ProjectList";
 
+export const revalidate = 0;
+
 const Home = () => {
   return (
     <main>

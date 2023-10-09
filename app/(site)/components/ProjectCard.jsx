@@ -7,6 +7,7 @@ import Link from "next/link";
 
 
 export const revalidate = 0;
+export const dynamic = 'force-dynamic';
 
 const ProjectCard = ({ slug, title, summary, github, image }) => {
   const [hasMounted, setHasMounted] = useState(false);

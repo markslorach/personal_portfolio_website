@@ -34,7 +34,7 @@ export default function ImageSlider({ image }) {
   };
 
   return (
-    <div className="mt-24">
+    <div className="my-14">
       <motion.div
         className="relative overflow-hidden rounded-md"
         initial="hidden"

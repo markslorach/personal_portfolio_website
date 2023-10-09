@@ -11,17 +11,17 @@ export default async function Project({ params }) {
 
   return (
     <main>
-      <div className="flex justify-center px-16">
+      <div className="flex justify-center">
         <div className="w-[680px] flex flex-col">
           <NavBar />
           <div className="flex justify-center flex-col">
-            <div className="pt-20 pb-10">
-              <ImageSlider image={project.image} />
-            </div>
-            <h1 className="text-2xl font-semibold mb-1 text-black/70 dark:text-white/80 tracking-wide">
+            <div className="pt-20">
+            <h1 className="text-3xl font-semibold dark-text-primary light-text-primary tracking-wide">
               {project.title}
             </h1>
-            <div className="py-5 text-base font-light tracking-wide leading-relaxed	text-white/80">
+              <ImageSlider image={project.image} />
+            </div>
+            <div className="text-base font-light tracking-wide leading-relaxed	text-white/80">
               <PortableText value={project.content} />
             </div>
           </div>

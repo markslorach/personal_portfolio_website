@@ -4,7 +4,7 @@ import ThemeButton from "./ThemeButton";
 
 export const NavBar = () => {
   return (
-    <header>
+    <nav className="nav">
       <div className="nav-container">
         <Link href="/">
           <h2 className="nav-logo">
@@ -25,6 +25,6 @@ export const NavBar = () => {
           <ThemeButton />
         </div>
       </div>
-    </header>
+    </nav>
   );
 };

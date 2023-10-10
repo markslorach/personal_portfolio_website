@@ -1,5 +1,4 @@
 import ImageSlider from "@/app/(site)/components/ImageSlider";
-import { NavBar } from "@/app/(site)/components/NavBar";
 import { getProject } from "@/sanity/sanity-utils";
 import { PortableText } from "@portabletext/react";
 
@@ -13,7 +12,6 @@ export default async function Project({ params }) {
     <main>
       <div className="flex justify-center">
         <div className="w-[680px] flex flex-col">
-          <NavBar />
           <div className="flex justify-center flex-col">
             <div className="pt-20">
             <h1 className="text-3xl font-semibold dark-text-primary light-text-primary tracking-wide">

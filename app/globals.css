@@ -45,8 +45,12 @@ body {
 }
 
 /* NAVIGATION */
+.nav {
+  @apply w-full flex justify-center;
+}
+
 .nav-container {
-  @apply flex justify-between items-center pt-10 pb-6;
+  @apply flex justify-between items-center pt-10 pb-6 w-[680px];
 }
 
 .nav-logo {
@@ -113,7 +117,7 @@ body {
 }
 
 .project-info-container {
-  @apply flex flex-col gap-4 w-1/2 pr-2 tracking-wide text-black/70 dark:text-white/80;
+  @apply flex flex-col gap-4 w-1/2 pr-2 tracking-wide light-text-primary dark-text-primary;
 }
 
 .project-title {
@@ -121,7 +125,7 @@ body {
 }
 
 .project-summary {
-  @apply text-sm font-light text-black/60 dark:text-white/50;
+  @apply text-sm font-light light-text-secondary dark-text-secondary;
 }
 
 .project-card-btn {

@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -16,7 +16,6 @@ const animateHero = {
 };
 
 export const Hero = () => {
-  
   return (
     <section>
       <div className="hero-container">
@@ -39,21 +38,9 @@ export const Hero = () => {
           <span className="text-gradient">
             <Link href={"/profile"}>I'm Mark</Link>
           </span>
-          , a design and user experience focused junior{" "}
-          <span className="">software developer</span> based in{" "}
-          <span className=""> Scotland</span>.
+          , a design and user experience focused junior software developer based
+          in Scotland.
         </motion.h1>
-        {/* <motion.p
-          className="hero-profile"
-          variants={animateHero}
-          initial="hidden"
-          animate="show"
-        >
-          I love creating user-friendly applications with a focus on visual and
-          system design. I'm seeking my first role in the tech industry to help
-          build impactful products and continue to learn and grow as a
-          developer.
-        </motion.p> */}
       </div>
     </section>
   );

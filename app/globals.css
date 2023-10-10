@@ -96,6 +96,41 @@ body {
   @apply text-sm text-black/20 dark:text-white/30;
 }
 
+
+/* PROJECT CARD */
+.card-container {
+  @apply flex gap-5 p-4 mt-6 bg-white/5 rounded-sm hover:bg-blue-300/10 transition-colors duration-500 ease-in-out;
+}
+
+.img-container {
+  @apply w-1/2
+}
+
+.card-img {
+  @apply rounded-sm shadow-md
+}
+
+.project-info-container {
+  @apply flex flex-col gap-4 w-1/2 pr-2 tracking-wide text-black/70 dark:text-white/80 
+}
+
+.project-title {
+  @apply leading-none text-base font-medium flex gap-1 items-center
+}
+
+.project-summary {
+  @apply text-sm font-light text-black/60 dark:text-white/50
+}
+
+.project-card-btn {
+  @apply flex items-center gap-2 text-sm font-light leading-none p-2.5 bg-white/10 rounded-sm hover:bg-purple-200/20 transition-colors duration-500 ease-in-out
+}
+
+.btn-icon {
+  @apply text-xl transform group-hover:rotate-12 transition-transform duration-500
+}
+
+
 /* CODE BOX */
 /* main styling within CodeBox component */
 

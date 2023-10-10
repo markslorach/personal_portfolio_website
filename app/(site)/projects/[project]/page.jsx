@@ -21,7 +21,7 @@ export default async function Project({ params }) {
             </h1>
               <ImageSlider image={project.image} />
             </div>
-            <div className="text-base font-light tracking-wide leading-relaxed	text-white/80">
+            <div className="text-base font-light tracking-wide leading-relaxedtext-white/80">
               <PortableText value={project.content} />
             </div>
           </div>

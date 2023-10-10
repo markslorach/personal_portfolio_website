@@ -35,7 +35,7 @@ export const Hero = () => {
           animate="show"
         >
           Hello!{" "}
-          <span className="text-gradient">
+          <span className="text-gradient text-gradient-hover">
             <Link href={"/profile"}>I'm Mark</Link>
           </span>
           , a design and user experience focused junior software developer based

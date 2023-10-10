@@ -4,9 +4,16 @@ import { FaGithub } from "react-icons/fa";
 import { BsFillLightningChargeFill } from "react-icons/bs";
 import { RiArrowRightUpLine } from "react-icons/ri";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export const revalidate = 0;
 export const dynamic = "force-dynamic";
+
+const motionSettings = {
+  initial: { opacity: 0 },
+  animate: { opacity: 1 },
+  transition: { duration: 0.5 },
+};
 
 const ProjectCard = ({ slug, title, summary, github, image }) => {
   const [hasMounted, setHasMounted] = useState(false);
@@ -22,7 +29,8 @@ const ProjectCard = ({ slug, title, summary, github, image }) => {
 
   return (
     <Link href={`/projects/${slug}`}>
-      <div
+      <motion.div
+        {...motionSettings}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         className="card-container"
@@ -72,7 +80,7 @@ const ProjectCard = ({ slug, title, summary, github, image }) => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </Link>
   );
 };

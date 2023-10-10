@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply overflow-scroll
+  @apply overflow-scroll;
 }
 
 /* MAIN STYLES */
@@ -27,22 +27,21 @@ body {
   @apply text-black/50;
 }
 
-
 /* DARK MODE TOGGLES */
 .light-mode-toggle {
-  @apply p-2 ml-2 bg-slate-700 rounded-md;
+  @apply p-2 ml-2 bg-slate-700 rounded-sm;
 }
 
 .dark-mode-toggle {
-  @apply p-2 ml-2 bg-slate-300 rounded-md;
+  @apply p-2 ml-2 bg-slate-300 rounded-sm;
 }
 
 .moon {
-  @apply opacity-60 group-hover:-rotate-12 transition duration-500 ease-in-out
+  @apply opacity-60 group-hover:-rotate-12 transition duration-500 ease-in-out;
 }
 
 .sun {
-  @apply text-white/70 group-hover:-rotate-12 transition duration-500 ease-in-out
+  @apply text-white/70 group-hover:-rotate-12 transition duration-500 ease-in-out;
 }
 
 /* NAVIGATION */
@@ -68,11 +67,11 @@ body {
 
 /* HERO SECTION */
 .hero-container {
-  @apply flex flex-col gap-4 pt-20
+  @apply flex flex-col gap-4 pt-20;
 }
 
 .hero-image {
-  @apply rounded-3xl -ml-2
+  @apply rounded-3xl -ml-2;
 }
 
 .hero-title {
@@ -87,6 +86,10 @@ body {
   @apply text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400;
 }
 
+.text-gradient-hover {
+  @apply hover:text-purple-400 transition duration-500 ease-in-out;
+}
+
 /* FOOTER */
 .footer-container {
   @apply flex justify-center pt-28 pb-12;
@@ -96,46 +99,44 @@ body {
   @apply text-sm text-black/20 dark:text-white/30;
 }
 
-
 /* PROJECT CARD */
 .card-container {
   @apply flex gap-5 p-4 mt-6 bg-white/5 rounded-sm hover:bg-blue-300/10 transition-colors duration-500 ease-in-out;
 }
 
 .img-container {
-  @apply w-1/2
+  @apply w-1/2;
 }
 
 .card-img {
-  @apply rounded-sm shadow-md
+  @apply rounded-sm shadow-md;
 }
 
 .project-info-container {
-  @apply flex flex-col gap-4 w-1/2 pr-2 tracking-wide text-black/70 dark:text-white/80 
+  @apply flex flex-col gap-4 w-1/2 pr-2 tracking-wide text-black/70 dark:text-white/80;
 }
 
 .project-title {
-  @apply leading-none text-base font-medium flex gap-1 items-center
+  @apply leading-none text-base font-medium flex gap-1 items-center;
 }
 
 .project-summary {
-  @apply text-sm font-light text-black/60 dark:text-white/50
+  @apply text-sm font-light text-black/60 dark:text-white/50;
 }
 
 .project-card-btn {
-  @apply flex items-center gap-2 text-sm font-light leading-none p-2.5 bg-white/10 rounded-sm hover:bg-purple-200/20 transition-colors duration-500 ease-in-out
+  @apply flex items-center gap-2 text-sm font-light leading-none p-2.5 bg-white/10 rounded-sm hover:bg-purple-200/20 transition-colors duration-500 ease-in-out;
 }
 
 .btn-icon {
-  @apply text-xl transform group-hover:rotate-12 transition-transform duration-500
+  @apply text-xl transform group-hover:rotate-12 transition-transform duration-500;
 }
-
 
 /* CODE BOX */
 /* main styling within CodeBox component */
 
 .code-box-links {
-  @apply text-blue-400 hover:text-blue-300 transition duration-300 ease-in-out
+  @apply text-blue-400 hover:text-blue-300 transition duration-300 ease-in-out;
 }
 
 .blink {
@@ -152,4 +153,3 @@ body {
     visibility: hidden;
   }
 }
-

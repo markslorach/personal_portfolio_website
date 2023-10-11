@@ -34,7 +34,7 @@ export default function ImageSlider({ image }) {
   };
 
   return (
-    <div className="my-14">
+
       <motion.div
         className="relative overflow-hidden rounded-sm"
         initial="hidden"
@@ -65,6 +65,5 @@ export default function ImageSlider({ image }) {
           <RiArrowRightSFill className="h-6 w-6 text-slate-800/70" />
         </motion.button>
       </motion.div>
-    </div>
   );
 }

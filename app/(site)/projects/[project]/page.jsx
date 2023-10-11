@@ -11,20 +11,18 @@ export default async function Project({ params }) {
 
   return (
     <main>
-      <div className="flex justify-center">
+      <div className="flex justify-center mt-24 mx-5">
         <div className="w-[680px] flex flex-col">
           <div className="flex justify-center flex-col">
-            <div className="pt-10">
-              <ImageSlider image={project.image} />
+            <ImageSlider image={project.image} />
 
-              <h1 className="text-2xl font-semibold dark-text-primary light-text-primary tracking-wide mb-4">
-                {project.title}
-              </h1>
-              <PortableText
-                value={project.content}
-                components={RichTextComponents}
-              />
-            </div>
+            <h1 className="text-2xl font-semibold dark-text-primary light-text-primary tracking-wide mb-4">
+              {project.title}
+            </h1>
+            <PortableText
+              value={project.content}
+              components={RichTextComponents}
+            />
           </div>
         </div>
       </div>

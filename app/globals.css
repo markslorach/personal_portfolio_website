@@ -46,11 +46,11 @@ body {
 
 /* NAVIGATION */
 .nav {
-  @apply w-full flex justify-center px-16 ;
+  @apply w-full flex justify-center;
 }
 
 .nav-container {
-  @apply flex flex-wrap justify-between items-center pt-10 pb-6 md:w-[680px] sm:w-[90%] ;
+  @apply flex flex-wrap justify-between items-center pt-10 w-[680px] mx-5 ;
 }
 
 .nav-logo {
@@ -71,7 +71,7 @@ body {
 
 /* HERO SECTION */
 .hero-container {
-  @apply flex flex-col gap-4 pt-16;
+  @apply flex flex-col gap-4;
 }
 
 .hero-image {
@@ -96,7 +96,7 @@ body {
 
 /* FOOTER */
 .footer-container {
-  @apply flex justify-center pt-28 pb-12;
+  @apply flex justify-center py-12;
 }
 
 .footer-text {

@@ -3,8 +3,8 @@ import React, { useState, useEffect } from "react";
 import { FaGithub } from "react-icons/fa";
 import { BsFillLightningChargeFill } from "react-icons/bs";
 import { RiArrowRightUpLine } from "react-icons/ri";
-import Link from "next/link";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export const revalidate = 0;
 export const dynamic = "force-dynamic";

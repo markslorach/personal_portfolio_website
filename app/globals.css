@@ -46,11 +46,11 @@ body {
 
 /* NAVIGATION */
 .nav {
-  @apply w-full flex justify-center;
+  @apply w-full flex justify-center px-16 ;
 }
 
 .nav-container {
-  @apply flex justify-between items-center pt-10 pb-6 w-[680px];
+  @apply flex flex-wrap justify-between items-center pt-10 pb-6 md:w-[680px] sm:w-[90%] ;
 }
 
 .nav-logo {
@@ -79,12 +79,12 @@ body {
 }
 
 .hero-title {
-  @apply text-4xl font-semibold tracking-wide light-text-primary dark-text-primary;
+  @apply text-2xl sm:text-4xl font-semibold tracking-wide light-text-primary dark-text-primary;
 }
 
-.hero-profile {
+/* .hero-profile {
   @apply tracking-wider font-light text-[17px] leading-normal light-text-primary dark-text-secondary mt-1;
-}
+} */
 
 .text-gradient {
   @apply text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400;
@@ -133,14 +133,14 @@ body {
 }
 
 .btn-icon {
-  @apply text-xl transform group-hover:rotate-12 transition duration-500 ease-in-out;
+  @apply text-xl transform group-hover:rotate-0 transition-transform duration-300 ease-in-out;
 }
 
 /* CODE BOX */
 /* main styling within CodeBox component */
 
 .code-box-links {
-  @apply text-blue-400 hover:text-blue-300 transition duration-300 ease-in-out;
+  @apply text-blue-400 hover:text-blue-300 transition duration-500 ease-in-out;
 }
 
 .blink {

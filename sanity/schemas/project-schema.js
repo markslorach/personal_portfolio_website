@@ -4,6 +4,11 @@ const projects = {
   type: "document",
   fields: [
     {
+      name: "id",
+      title: "ID",
+      type: "string",
+    },
+    {
       name: "title",
       title: "Title",
       type: "string",
@@ -40,9 +45,17 @@ const projects = {
       name: "content",
       title: "Content",
       type: "array",
-      of: [{ type: "block" }],
+      of: [
+        { type: "block" },
+        {
+          type: "image",
+        },
+      ],
     },
   ],
 };
 
+
+
 export default projects;
+

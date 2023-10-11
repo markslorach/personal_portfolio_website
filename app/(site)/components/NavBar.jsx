@@ -13,6 +13,7 @@ export const NavBar = () => {
         </Link>
 
         <div className="nav-links-container">
+        <div className="flex gap-5 md:flex-none">
           <Link className="nav-links" href="/profile">
             Profile
           </Link>
@@ -22,6 +23,7 @@ export const NavBar = () => {
           <Link className="nav-links" href="/contact">
             Contact
           </Link>
+          </div>
           <ThemeButton />
         </div>
       </div>

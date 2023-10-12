@@ -6,13 +6,15 @@ export const NavBar = () => {
   return (
     <nav className="nav">
       <div className="nav-container">
+      <div className="flex justify-between w-full items-center">
         <Link href="/">
           <h2 className="nav-logo">
             mark<span className="nav-logo-span">slorach</span>.
           </h2>
         </Link>
-        <div className="md:hidden">
+        <div className="md:hidden flex">
         <ThemeButton />
+        </div>
         </div>
 
         <div className="nav-links-container">

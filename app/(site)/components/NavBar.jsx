@@ -11,6 +11,9 @@ export const NavBar = () => {
             mark<span className="nav-logo-span">slorach</span>.
           </h2>
         </Link>
+        <div className="md:hidden">
+        <ThemeButton />
+        </div>
 
         <div className="nav-links-container">
         <div className="flex gap-5 md:flex-none">
@@ -24,7 +27,11 @@ export const NavBar = () => {
             Contact
           </Link>
           </div>
+          <div className="hidden md:inline">
+          <div className="flex items-center">
           <ThemeButton />
+          </div>
+          </div>
         </div>
       </div>
     </nav>

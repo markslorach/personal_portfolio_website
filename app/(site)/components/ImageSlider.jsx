@@ -36,7 +36,7 @@ export default function ImageSlider({ image }) {
   return (
 
       <motion.div
-        className="relative overflow-hidden rounded-sm"
+        className="relative overflow-hidden rounded-sm mb-4"
         initial="hidden"
         animate="show"
         variants={animateImageIn}

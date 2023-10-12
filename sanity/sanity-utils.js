@@ -19,7 +19,8 @@ export async function getProjects() {
                 _id,
                 url
             }
-        }
+        },
+        techStack
     }`
   );
 }
@@ -41,7 +42,8 @@ export async function getProject(slug) {
                     _id,
                     url
                 }
-            }
+            },
+            techStack
         }`,
     { slug }
   );

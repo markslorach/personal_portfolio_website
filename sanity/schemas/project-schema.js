@@ -52,6 +52,16 @@ const projects = {
         },
       ],
     },
+    {
+      name: "techStack",
+      title: "Tech Stack",
+      type: "array",
+      of: [
+        {
+          type: "string",
+        },
+      ],
+    },
   ],
 };
 

@@ -13,12 +13,12 @@ export default function ProjectList({ showAll }) {
       const fetchedProjects = await getProjects();
       const sortedProjects = fetchedProjects.sort((a, b) => Number(a.id) - Number(b.id));
       const displayedProjects = showAll ? sortedProjects : sortedProjects.slice(0, 3);
+      console.log(displayedProjects)
       setProjects(displayedProjects);
     };
 
     fetchData();
   }, []);
-
   return (
     <section>
       <h2 className=" text-xl md:text-2xl font-semibold mb-8 light-text-primary dark-text-primary tracking-wide">

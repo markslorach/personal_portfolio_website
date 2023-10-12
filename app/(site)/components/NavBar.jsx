@@ -12,7 +12,7 @@ export const NavBar = () => {
             mark<span className="nav-logo-span">slorach</span>.
           </h2>
         </Link>
-        <div className="md:hidden flex">
+        <div className="sm:hidden flex">
         <ThemeButton />
         </div>
         </div>

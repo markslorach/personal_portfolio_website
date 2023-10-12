@@ -15,46 +15,43 @@ export default async function Project({ params }) {
     <main>
       <div className="flex justify-center mt-24 mx-5">
         <div className="w-[680px] flex flex-col">
-          <div className="flex justify-center flex-col">
-            <ImageSlider image={project.image} />
-            <div className="flex flex-wrap gap-4 sm:gap-0 justify-between">
-              <div className="flex gap-3 justify-center sm:justify-start">
-                {project.techStack.map((stack) => (
-                  <p
-                    className="p-3 bg-white/5 flex items-center leading-none rounded-sm font-mono text-[9px] sm:text-xs dark-text-primary light-text-primary"
-                    key={stack}
-                  >
-                    {stack}
-                  </p>
-                ))}
-              </div>
-
-              <div className="flex gap-3">
-                <button className="project-card-btn">
-                  <span className="btn-icon">
-                    <FaGithub />
-                  </span>
-                  <span className="hidden sm:inline">GitHub</span>
-                </button>
-
-                <button className="project-card-btn">
-                  <span className="btn-icon">
-                    <BsFillLightningChargeFill />
-                  </span>
-                  <span className="hidden sm:inline">Demo</span>
-                </button>
-              </div>
+          <ImageSlider image={project.image} />
+          <div className="flex flex-wrap gap-4 sm:gap-0 justify-between">
+            <div className="flex gap-3 justify-center sm:justify-start items-start">
+              {project.techStack.map((stack) => (
+                <div
+                  className="p-2.5 bg-white/10 h-min rounded-sm font-mono text-[10px] sm:text-xs dark-text-primary light-text-primary"
+                  key={stack}
+                >
+                  {stack}
+                </div>
+              ))}
             </div>
+            <div className="flex gap-3">
+              <button className="project-card-btn">
+                <span className="btn-icon">
+                  <FaGithub />
+                </span>
+                <span className="hidden sm:inline">GitHub</span>
+              </button>
 
-            <h1 className="text-xl sm:text-2xl my-10 font-semibold dark-text-primary light-text-primary tracking-wide mb-4">
-              {project.title}
-            </h1>
-
-            <PortableText
-              value={project.content}
-              components={RichTextComponents}
-            />
+              <button className="project-card-btn">
+                <span className="btn-icon">
+                  <BsFillLightningChargeFill />
+                </span>
+                <span className="hidden sm:inline">Demo</span>
+              </button>
+            </div>
           </div>
+
+          <h1 className="text-xl sm:text-2xl my-10 font-semibold dark-text-primary light-text-primary tracking-wide mb-4">
+            {project.title}
+          </h1>
+
+          <PortableText
+            value={project.content}
+            components={RichTextComponents}
+          />
         </div>
       </div>
     </main>

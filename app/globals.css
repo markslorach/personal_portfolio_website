@@ -105,7 +105,7 @@ body {
 
 /* PROJECT CARD */
 .card-container {
-  @apply sm:flex sm:flex sm:flex-wrap sm:flex-nowrap gap-5 w-full p-4 mt-6 bg-white/5 rounded-sm hover:bg-blue-300/10 transition-colors duration-500 ease-in-out;
+  @apply sm:flex  flex-wrap sm:flex-nowrap gap-5 w-full p-4 mt-6 bg-white/5 rounded-sm hover:bg-blue-300/10 transition-colors duration-500 ease-in-out;
 }
 
 .img-container {

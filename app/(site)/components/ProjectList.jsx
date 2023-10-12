@@ -21,10 +21,6 @@ export default function ProjectList({ showAll }) {
   }, []);
   return (
     <section>
-      <h2 className=" text-xl md:text-2xl font-semibold mb-8 light-text-primary dark-text-primary tracking-wide">
-        Recent projects
-      </h2>
-
       {projects.map((project) => (
         <ProjectCard
           key={project.id}

@@ -129,7 +129,7 @@ body {
 }
 
 .project-card-btn {
-  @apply flex items-center gap-2 text-sm font-light leading-none p-2.5 bg-white/10 rounded-sm hover:bg-purple-200/20 transition-colors duration-500 ease-in-out;
+  @apply flex items-center gap-2 text-sm dark-text-primary light-text-primary font-light leading-none p-2.5 bg-white/10 rounded-sm hover:bg-purple-200/20 transition-colors duration-500 ease-in-out;
 }
 
 .btn-icon {

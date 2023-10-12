@@ -20,7 +20,7 @@ export default async function Project({ params }) {
             <div className="flex gap-3 justify-center sm:justify-start items-start">
               {project.techStack.map((stack) => (
                 <div
-                  className="p-2.5 bg-white/10 h-min rounded-sm font-mono text-[10px] sm:text-xs dark-text-primary light-text-primary"
+                  className="p-2.5 bg-white/5 h-min rounded-sm font-mono text-[10px] sm:text-xs dark-text-primary light-text-primary"
                   key={stack}
                 >
                   {stack}

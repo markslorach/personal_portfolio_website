@@ -15,7 +15,7 @@ export default async function Project({ params }) {
         <div className="w-[680px] flex flex-col">
           <div className="flex justify-center flex-col">
             <ImageSlider image={project.image} />
-            <div className="flex gap-4">
+            <div className="flex gap-4 justify-center md:justify-start">
             {project.techStack.map((stack) => (
               <p className="p-3 bg-white/5 rounded-sm font-mono text-[9px] md:text-xs dark-text-primary light-text-primary" key={stack}>{stack}</p>
             ))}

@@ -17,11 +17,11 @@ export default async function Project({ params }) {
         <div className="w-[680px] flex flex-col">
           <div className="flex justify-center flex-col">
             <ImageSlider image={project.image} />
-            <div className="flex flex-wrap gap-4 md:gap-0 justify-between">
-              <div className="flex gap-3 justify-center md:justify-start">
+            <div className="flex flex-wrap gap-4 sm:gap-0 justify-between">
+              <div className="flex gap-3 justify-center sm:justify-start">
                 {project.techStack.map((stack) => (
                   <p
-                    className="p-3 bg-white/5 flex items-center leading-none rounded-sm font-mono text-[9px] md:text-xs dark-text-primary light-text-primary"
+                    className="p-3 bg-white/5 flex items-center leading-none rounded-sm font-mono text-[9px] sm:text-xs dark-text-primary light-text-primary"
                     key={stack}
                   >
                     {stack}
@@ -34,19 +34,19 @@ export default async function Project({ params }) {
                   <span className="btn-icon">
                     <FaGithub />
                   </span>
-                  <span className="hidden md:inline">GitHub</span>
+                  <span className="hidden sm:inline">GitHub</span>
                 </button>
 
                 <button className="project-card-btn">
                   <span className="btn-icon">
                     <BsFillLightningChargeFill />
                   </span>
-                  <span className="hidden md:inline">Demo</span>
+                  <span className="hidden sm:inline">Demo</span>
                 </button>
               </div>
             </div>
 
-            <h1 className="text-xl md:text-2xl my-10 font-semibold dark-text-primary light-text-primary tracking-wide mb-4">
+            <h1 className="text-xl sm:text-2xl my-10 font-semibold dark-text-primary light-text-primary tracking-wide mb-4">
               {project.title}
             </h1>
 

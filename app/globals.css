@@ -50,7 +50,7 @@ body {
 }
 
 .nav-container {
-  @apply flex flex-wrap md:flex-nowrap justify-between items-center pt-10 w-[680px] mx-5 ;
+  @apply flex flex-wrap sm:flex-nowrap justify-between items-center pt-10 w-[680px] mx-5 ;
 }
 
 .nav-logo {
@@ -62,7 +62,7 @@ body {
 }
 
 .nav-links-container {
-  @apply flex justify-between gap-5 w-full md:w-min text-black/80 items-center mt-3 md:mt-0;
+  @apply flex justify-between gap-5 w-full sm:w-min text-black/80 items-center mt-3 sm:mt-0;
 }
 
 .nav-links {
@@ -100,16 +100,16 @@ body {
 }
 
 .footer-text {
-  @apply text-xs md:text-sm text-black/20 dark:text-white/30;
+  @apply text-xs sm:text-sm text-black/20 dark:text-white/30;
 }
 
 /* PROJECT CARD */
 .card-container {
-  @apply md:flex sm:flex sm:flex-wrap md:flex-nowrap gap-5 w-full p-4 mt-6 bg-white/5 rounded-sm hover:bg-blue-300/10 transition-colors duration-500 ease-in-out;
+  @apply sm:flex sm:flex sm:flex-wrap sm:flex-nowrap gap-5 w-full p-4 mt-6 bg-white/5 rounded-sm hover:bg-blue-300/10 transition-colors duration-500 ease-in-out;
 }
 
 .img-container {
-  @apply md:w-1/2 sm:w-full md:h-auto sm:h-auto;
+  @apply sm:w-1/2 w-full sm:h-auto h-auto;
 }
 
 .card-img {
@@ -117,7 +117,7 @@ body {
 }
 
 .project-info-container {
-  @apply flex flex-col gap-4 md:w-1/2 sm:w-full pr-2 tracking-wide light-text-primary dark-text-primary mt-4 sm:mt-0 ;
+  @apply flex flex-col gap-4 sm:w-1/2 w-full pr-2 tracking-wide light-text-primary dark-text-primary mt-4 sm:mt-0 ;
 }
 
 .project-title {

@@ -18,7 +18,7 @@ const Home = () => {
         <div className="w-[680px] flex flex-col">
           <Hero />
           <CodeBox />
-          <h2 className=" text-xl md:text-2xl font-semibold light-text-primary dark-text-primary tracking-wide">
+          <h2 className=" text-xl sm:text-2xl font-semibold light-text-primary dark-text-primary tracking-wide">
             Recent projects
           </h2>
           <ProjectList showAll={showAllProjects} />

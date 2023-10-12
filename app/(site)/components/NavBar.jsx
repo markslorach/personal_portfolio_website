@@ -18,7 +18,7 @@ export const NavBar = () => {
         </div>
 
         <div className="nav-links-container">
-        <div className="flex gap-5 md:flex-none">
+        <div className="flex gap-5 sm:flex-none">
           <Link className="nav-links" href="/profile">
             Profile
           </Link>
@@ -29,7 +29,7 @@ export const NavBar = () => {
             Contact
           </Link>
           </div>
-          <div className="hidden md:inline">
+          <div className="hidden sm:inline">
           <div className="flex items-center">
           <ThemeButton />
           </div>

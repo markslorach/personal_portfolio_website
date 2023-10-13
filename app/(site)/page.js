@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <main>
     <NavBar/>
-      <div className="flex justify-center pt-40 mx-5">
+      <div className="flex justify-center py-24 mx-5">
         <div className="w-[680px] flex flex-col">
           <Hero />
           <CodeBox />

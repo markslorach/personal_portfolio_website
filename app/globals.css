@@ -46,11 +46,11 @@
 
 /* NAVIGATION */
 .nav {
-  @apply w-full flex justify-center fixed z-10 bg-slate-100 dark:bg-[#111827];
+  @apply w-full flex justify-center;
 }
 
 .nav-container {
-  @apply flex flex-wrap sm:flex-nowrap justify-between items-center py-8 w-[680px] mx-5 ;
+  @apply flex flex-wrap sm:flex-nowrap justify-between items-center pt-10 w-[680px] mx-5 ;
 }
 
 .nav-logo {

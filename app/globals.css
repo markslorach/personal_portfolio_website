@@ -29,11 +29,11 @@ body {
 
 /* DARK MODE TOGGLES */
 .light-mode-toggle {
-  @apply p-2 ml-2 bg-slate-700 rounded-sm;
+  @apply p-2 ml-2 bg-slate-700 rounded-sm hidden sm:block;
 }
 
 .dark-mode-toggle {
-  @apply p-2 ml-2 bg-slate-300 rounded-sm;
+  @apply p-2 ml-2 bg-slate-300 rounded-sm hidden sm:block;
 }
 
 .moon {
@@ -50,7 +50,7 @@ body {
 }
 
 .nav-container {
-  @apply flex flex-wrap sm:flex-nowrap justify-between items-center pt-10 w-[680px] mx-5 ;
+  @apply flex justify-between items-center pt-10 w-[680px] mx-5 ;
 }
 
 .nav-logo {
@@ -62,11 +62,11 @@ body {
 }
 
 .nav-links-container {
-  @apply flex justify-between gap-5 w-full sm:w-min text-black/80 items-center mt-3 sm:mt-0;
+  @apply flex justify-between gap-5 w-full sm:w-min text-black/80 items-center;
 }
 
 .nav-links {
-  @apply text-base font-normal tracking-wide hover:text-black/80 light-text-secondary dark-text-secondary dark:hover:text-white/90 transition duration-200 ease-in;
+  @apply hidden sm:inline text-base font-normal tracking-wide hover:text-black/80 light-text-secondary dark-text-secondary dark:hover:text-white/90 transition duration-200 ease-in;
 }
 
 /* HERO SECTION */

@@ -11,6 +11,10 @@ export default async function Project({ params }) {
   const slug = params.project;
   const project = await getProject(slug);
 
+  if (typeof window !== 'undefined') {
+    window.scrollTo(0, 0);
+  }
+
   return (
     <main>
       <div className="flex justify-center mt-24 mx-5">

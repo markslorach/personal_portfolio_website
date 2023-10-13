@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import Providers from "../Providers";
 import Footer from "./components/Footer";
 import { NavBar } from "./components/NavBar";
+import ScrollToTop from "./components/ScrollToTop";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${poppins.className}`}>
         <Providers>
+        <ScrollToTop/>
           <main className="bg-colour">
             <NavBar/>
             {children}

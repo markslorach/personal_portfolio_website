@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ThemeButton from "./ThemeButton";
 import { TbMenu2 } from "react-icons/tb";
 import { IoClose } from "react-icons/io5";
@@ -11,6 +11,14 @@ export const NavBar = () => {
   const handleClickOpen = () => {
     setOpen(!open);
   };
+
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [open]);
 
   return (
     <div>
@@ -52,7 +60,7 @@ export const NavBar = () => {
       </nav>
 
       {open && (
-        <div className="flex top-0 fixed w-full h-full bg-slate-800 pt-10 px-5">
+        <div className="flex top-0 fixed w-full h-full bg-[#111827] pt-10 px-5 z-10">
           <div className="flex w-full h-min">
             <Link href="/">
               <h2 className="nav-logo">

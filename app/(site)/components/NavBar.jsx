@@ -2,15 +2,9 @@
 import Link from "next/link";
 import React from "react";
 import ThemeButton from "./ThemeButton";
-import { usePathname } from "next/navigation";
-import { useEffect } from "react";
+
 
 export const NavBar = () => {
-
-  const pathname = usePathname();
-  useEffect(()=>{
-      window.scrollTo(0,0);
-  },[pathname]) 
 
   return (
     <nav className="nav">

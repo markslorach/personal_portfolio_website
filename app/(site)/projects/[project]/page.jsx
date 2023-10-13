@@ -4,7 +4,6 @@ import { PortableText } from "@portabletext/react";
 import { RichTextComponents } from "../../components/RichTextComponents";
 import { FaGithub } from "react-icons/fa";
 import { BsFillLightningChargeFill } from "react-icons/bs";
-import Footer from "../../components/Footer";
 
 export const revalidate = 0;
 

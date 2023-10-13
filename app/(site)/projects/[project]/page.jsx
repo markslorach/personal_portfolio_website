@@ -13,7 +13,7 @@ export default async function Project({ params }) {
   const project = await getProject(slug);
 
   return (
-    <main className="min-h-screen">
+    <main>
       <div className="flex justify-center pt-24 mx-5">
         <div className="w-[680px] flex flex-col">
           <ImageSlider image={project.image} />
@@ -55,7 +55,6 @@ export default async function Project({ params }) {
           />
         </div>
       </div>
-      <Footer/>
     </main>
   );
 }

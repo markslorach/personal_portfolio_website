@@ -4,6 +4,7 @@ import { PortableText } from "@portabletext/react";
 import { RichTextComponents } from "../../components/RichTextComponents";
 import { FaGithub } from "react-icons/fa";
 import { BsFillLightningChargeFill } from "react-icons/bs";
+import { NavBar } from "../../components/NavBar";
 
 export const revalidate = 0;
 
@@ -13,6 +14,7 @@ export default async function Project({ params }) {
 
   return (
     <main>
+    <NavBar/>
       <div className="flex justify-center pt-40 mx-5">
         <div className="w-[680px] flex flex-col">
           <ImageSlider image={project.image} />

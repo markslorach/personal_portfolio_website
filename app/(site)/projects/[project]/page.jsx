@@ -5,6 +5,7 @@ import { RichTextComponents } from "../../components/RichTextComponents";
 import { FaGithub } from "react-icons/fa";
 import { BsFillLightningChargeFill } from "react-icons/bs";
 import { NavBar } from "../../components/NavBar";
+import ScrollUp from "../../components/ScrollUp";
 
 export const revalidate = 0;
 
@@ -14,6 +15,7 @@ export default async function Project({ params }) {
 
   return (
     <main>
+    <ScrollUp/>
     <NavBar/>
       <div className="flex justify-center pt-24 mx-5">
         <div className="w-[680px] flex flex-col">

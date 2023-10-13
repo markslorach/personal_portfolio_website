@@ -5,6 +5,7 @@ import { GetInTouch } from "./components/GetInTouch";
 import { Hero } from "./components/Hero";
 import ProjectList from "./components/ProjectList";
 import CodeBox from "./components/CodeBox";
+import Footer from "./components/Footer";
 
 export const revalidate = 0;
 
@@ -25,6 +26,7 @@ const Home = () => {
           <GetInTouch />
         </div>
       </div>
+      <Footer />
     </main>
   );
 };

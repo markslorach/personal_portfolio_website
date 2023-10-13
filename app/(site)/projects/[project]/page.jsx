@@ -4,6 +4,7 @@ import { PortableText } from "@portabletext/react";
 import { RichTextComponents } from "../../components/RichTextComponents";
 import { FaGithub } from "react-icons/fa";
 import { BsFillLightningChargeFill } from "react-icons/bs";
+import Footer from "../../components/Footer";
 
 export const revalidate = 0;
 
@@ -12,7 +13,7 @@ export default async function Project({ params }) {
   const project = await getProject(slug);
 
   return (
-    <main className="">
+    <main className="min-h-screen">
       <div className="flex justify-center pt-24 mx-5">
         <div className="w-[680px] flex flex-col">
           <ImageSlider image={project.image} />
@@ -54,6 +55,7 @@ export default async function Project({ params }) {
           />
         </div>
       </div>
+      <Footer/>
     </main>
   );
 }

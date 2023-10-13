@@ -3,6 +3,11 @@ import React from "react";
 import ThemeButton from "./ThemeButton";
 
 export const NavBar = () => {
+
+  if (typeof window !== 'undefined') {
+    window.scrollTo(0, 0);
+  }
+
   return (
     <nav className="nav">
       <div className="nav-container">

@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { GetInTouch } from "./components/GetInTouch";
 import { Hero } from "./components/Hero";
@@ -12,13 +12,19 @@ const Home = () => {
   const router = useRouter();
   const showAllProjects = router.pathname === "/projects";
 
+  useEffect(() => {
+    document.addEventListener('DOMContentLoaded', () => {
+      history.scrollRestoration = 'manual';
+    });
+  }, []);
+
   return (
     <main>
       <div className="flex justify-center my-24 mx-5">
         <div className="w-[680px] flex flex-col">
           <Hero />
           <CodeBox />
-          <h2 className=" text-xl sm:text-2xl font-semibold light-text-primary dark-text-primary tracking-wide">
+          <h2 className="text-xl sm:text-2xl font-semibold light-text-primary dark-text-primary tracking-wide">
             Recent projects
           </h2>
           <ProjectList showAll={showAllProjects} />
@@ -30,3 +36,4 @@ const Home = () => {
 };
 
 export default Home;
+

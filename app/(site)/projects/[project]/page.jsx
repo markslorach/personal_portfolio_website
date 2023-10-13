@@ -44,7 +44,7 @@ export default async function Project({ params }) {
             </div>
           </div>
 
-          <h1 className="text-xl sm:text-2xl my-10 font-semibold dark-text-primary light-text-primary tracking-wide mb-4">
+          <h1 className="text-xl sm:text-2xl mt-16 font-semibold dark-text-primary light-text-primary tracking-wide mb-4">
             {project.title}
           </h1>
 

@@ -8,7 +8,7 @@ body {
 
 /* MAIN STYLES */
 .bg-colour {
-  @apply bg-[url('../public/images/grain.png')] bg-no-repeat bg-cover bg-center bg-fixed min-h-screen;
+  @apply bg-[url('../public/images/grainy.png')] bg-no-repeat bg-center bg-fixed min-h-screen;
 }
 
 .dark-text-primary {

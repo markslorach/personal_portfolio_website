@@ -13,7 +13,7 @@ export default async function Project({ params }) {
 
   return (
     <main>
-      <div className="flex justify-center mt-24 mx-5">
+      <div className="flex justify-center pt-40 mx-5">
         <div className="w-[680px] flex flex-col">
           <ImageSlider image={project.image} />
           <div className="flex flex-wrap gap-3 sm:gap-0 justify-between">

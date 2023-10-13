@@ -5,7 +5,6 @@ import { GetInTouch } from "./components/GetInTouch";
 import { Hero } from "./components/Hero";
 import ProjectList from "./components/ProjectList";
 import CodeBox from "./components/CodeBox";
-import { NavBar } from "./components/NavBar";
 
 export const revalidate = 0;
 
@@ -15,7 +14,6 @@ const Home = () => {
 
   return (
     <main>
-    <NavBar/>
       <div className="flex justify-center py-24 mx-5">
         <div className="w-[680px] flex flex-col">
           <Hero />

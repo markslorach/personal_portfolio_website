@@ -26,7 +26,7 @@ export const NavBar = () => {
             {!isOpen ? (
               <motion.button 
                 onClick={() => setIsOpen(true)}
-                className="dark-text-primary text-2xl sm:hidden"
+                className="dark-text-primary text-3xl sm:hidden"
                 whileTap={{ scale: 0.8 }} 
               >
                 <TbMenu2 />
@@ -34,7 +34,7 @@ export const NavBar = () => {
             ) : (
               <motion.button
                 onClick={() => setIsOpen(false)}
-                className="dark-text-primary text-2xl sm:hidden"
+                className="dark-text-primary text-3xl sm:hidden"
                 whileTap={{ scale: 0.8 }} 
               >
                 <IoClose />

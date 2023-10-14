@@ -1,44 +1,78 @@
-'use client'
+"use client";
 import Link from "next/link";
-import React from "react";
-import ThemeButton from "./ThemeButton";
-
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion"; 
+import { TbMenu2 } from "react-icons/tb";
+import { IoClose } from "react-icons/io5";
 
 export const NavBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="nav">
-      <div className="nav-container">
-      <div className="flex justify-between w-full items-center">
-        <Link href="/">
-          <h2 className="nav-logo">
-            mark<span className="nav-logo-span">slorach</span>.
-          </h2>
-        </Link>
-        <div className="sm:hidden flex">
-        <ThemeButton />
-        </div>
-        </div>
+    <>
+      <nav className="nav">
+        <div className="nav-container">
+          <div className="flex justify-between w-full items-center">
+            <Link href="/">
+              <h2 className="nav-logo">
+                mark<span className="nav-logo-span">slorach</span>.
+              </h2>
+            </Link>
 
-        <div className="nav-links-container">
-        <div className="flex gap-5 sm:flex-none">
-          <Link className="nav-links" href="/profile">
-            Profile
-          </Link>
-          <Link className="nav-links" href="/projects">
-            Projects
-          </Link>
-          <Link className="nav-links" href="/contact">
-            Contact
-          </Link>
+            {!isOpen ? (
+              <motion.button 
+                onClick={() => setIsOpen(true)}
+                className="dark-text-primary text-2xl sm:hidden"
+                whileTap={{ scale: 0.9 }} 
+              >
+                <TbMenu2 />
+              </motion.button>
+            ) : (
+              <motion.button
+                onClick={() => setIsOpen(false)}
+                className="dark-text-primary text-2xl sm:hidden"
+                whileTap={{ scale: 0.9 }} 
+              >
+                <IoClose />
+              </motion.button>
+            )}
           </div>
-          <div className="hidden sm:inline">
-          <div className="flex items-center">
-          <ThemeButton />
-          </div>
+
+          <div className="nav-links-container">
+            <div className="flex gap-5 sm:flex-none">
+              <Link className="nav-links hidden sm:inline" href="/profile">
+                Profile
+              </Link>
+              <Link className="nav-links hidden sm:inline" href="/projects">
+                Projects
+              </Link>
+              <Link className="nav-links hidden sm:inline" href="/contact">
+                Contact
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div 
+            initial={{ height: 0 }} 
+            animate={{ height: isOpen ? "auto" : "0px" }} 
+            exit={{ height: 0 }} 
+            transition={{ duration: 0.4, ease: "easeInOut" }}
+            className="flex justify-center overflow-hidden"
+          >
+            <div className="w-[680px] flex flex-col px-5">
+              <div className="dark:bg-[#111827] h-auto w-full flex flex-col gap-3 pt-4 dark-text-primary">
+                <p>Profile</p>
+                <p>Projects</p>
+                <p>Contact</p>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
   );
 };

@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* body {
+body {
   @apply overflow-scroll;
-} */
+}
 
 /* MAIN STYLES */
 .bg-colour {
@@ -46,7 +46,7 @@
 
 /* NAVIGATION */
 .nav {
-  @apply w-full flex justify-center;
+  @apply w-full relative z-10 flex justify-center dark:bg-[#111827];
 }
 
 .nav-container {

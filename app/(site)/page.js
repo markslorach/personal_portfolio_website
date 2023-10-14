@@ -14,7 +14,7 @@ const Home = () => {
 
   return (
     <main>
-      <div className="flex justify-center py-24 mx-5">
+      <div className="flex justify-center py-20 mx-5">
         <div className="w-[680px] flex flex-col">
           <Hero />
           <CodeBox />

@@ -8,6 +8,10 @@ import { IoClose } from "react-icons/io5";
 export const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const closeNav = () => {
+    setIsOpen(false);
+  };
+
   return (
     <>
       <nav className="nav">
@@ -23,7 +27,7 @@ export const NavBar = () => {
               <motion.button 
                 onClick={() => setIsOpen(true)}
                 className="dark-text-primary text-2xl sm:hidden"
-                whileTap={{ scale: 0.9 }} 
+                whileTap={{ scale: 0.8 }} 
               >
                 <TbMenu2 />
               </motion.button>
@@ -31,7 +35,7 @@ export const NavBar = () => {
               <motion.button
                 onClick={() => setIsOpen(false)}
                 className="dark-text-primary text-2xl sm:hidden"
-                whileTap={{ scale: 0.9 }} 
+                whileTap={{ scale: 0.8 }} 
               >
                 <IoClose />
               </motion.button>
@@ -65,9 +69,15 @@ export const NavBar = () => {
           >
             <div className="w-[680px] flex flex-col px-5">
               <div className="dark:bg-[#111827] h-auto w-full flex flex-col gap-3 pt-4 dark-text-primary">
-                <p>Profile</p>
-                <p>Projects</p>
-                <p>Contact</p>
+              <Link className="nav-links" href="/profile" onClick={closeNav}>
+                  Profile
+                </Link>
+                <Link className="nav-links" href="/projects" onClick={closeNav}>
+                  Projects
+                </Link>
+                <Link className="nav-links" href="/contact" onClick={closeNav}>
+                  Contact
+                </Link>
               </div>
             </div>
           </motion.div>

@@ -17,7 +17,7 @@ export const NavBar = () => {
       <nav className="nav">
         <div className="nav-container">
           <div className="flex justify-between w-full items-center">
-            <Link href="/">
+            <Link onClick={closeNav} href="/">
               <h2 className="nav-logo">
                 mark<span className="nav-logo-span">slorach</span>.
               </h2>

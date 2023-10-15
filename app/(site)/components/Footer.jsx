@@ -5,15 +5,15 @@ import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="flex justify-center">
-      <div className="w-[680px] flex justify-center py-10 gap-2 dark-text-primary">
-      <Link className="flex items-center" href={'https://github.com/mfslorach'}>
-        <button className="text-2xl">
+      <div className="w-[680px] flex justify-center py-10 gap-2 dark-text-secondary">
+      <Link className="flex items-center hover:text-white/80 transition duration-300 ease-in-out" href={'https://github.com/mfslorach'}>
+        <button className="text-3xl">
           <FaGithubSquare />
         </button>
         </Link>
 
-        <Link className="flex items-center" href={'https://www.linkedin.com/in/mfslorach/'}>
-        <button className="text-2xl">
+        <Link className="flex items-center hover:text-white/80 transition duration-300 ease-in-out" href={'https://www.linkedin.com/in/mfslorach/'}>
+        <button className="text-3xl">
           <FaLinkedin />
         </button>
         </Link>

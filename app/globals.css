@@ -95,9 +95,6 @@ body {
 }
 
 /* FOOTER */
-.footer-container {
-  @apply flex justify-center py-12;
-}
 
 .footer-text {
   @apply text-xs sm:text-sm text-black/20 dark:text-white/30;

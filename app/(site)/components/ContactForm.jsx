@@ -36,7 +36,7 @@ export const ContactForm = () => {
     </div>
     
       <form
-        className="flex flex-col gap-8 dark-text-primary w-full sm:w-1/2"
+        className="flex flex-col gap-5 dark-text-primary w-full sm:w-1/2"
         ref={form}
         onSubmit={sendEmail}
       >

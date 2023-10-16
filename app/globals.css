@@ -66,7 +66,7 @@ body {
 }
 
 .nav-links {
-  @apply text-lg sm:text-base font-light tracking-wide hover:text-black/80 light-text-secondary dark-text-secondary dark:hover:text-white/90 transition duration-200 ease-in;
+  @apply text-lg sm:text-base font-light tracking-wide hover:text-black/80 light-text-secondary dark-text-secondary dark:hover:text-white/90 transition duration-300 ease-in;
 }
 
 /* HERO SECTION */
@@ -122,7 +122,7 @@ body {
 }
 
 .project-summary {
-  @apply text-sm font-light light-text-secondary dark-text-secondary;
+  @apply text-sm font-light leading-relaxed light-text-secondary dark-text-secondary;
 }
 
 .project-card-btn {

@@ -69,7 +69,7 @@ export const ContactForm = () => {
             required
           />
         </div>
-        <button className="flex gap-2 text-base font-light leading-none items-center w-min p-2.5 bg-white/10 rounded-sm hover:bg-purple-200/20 transition-colors duration-500 ease-in-out">
+        <button className="flex gap-2 text-sm font-light leading-none items-center w-min p-2.5 bg-white/10 rounded-sm hover:bg-purple-200/20 transition-colors duration-500 ease-in-out ">
         <p className="btn-icon"><RiSendPlaneFill/></p>
           <input type="submit" value="Send" />
         </button>

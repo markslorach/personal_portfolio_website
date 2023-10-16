@@ -17,6 +17,6 @@ export const RichTextComponents = {
         
       },
       listItem: {
-        bullet: ({children}) => <li className="list-disc ml-10 font-extralight dark-text-primary light-text-primary">{children}</li>,
+        bullet: ({children}) => <li className="list-disc ml-10 font-extralight dark-text-primary">{children}</li>,
       },
 }

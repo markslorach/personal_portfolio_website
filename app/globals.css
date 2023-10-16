@@ -8,24 +8,24 @@ body {
 
 /* MAIN STYLES */
 .bg-colour {
-  @apply bg-slate-100 dark:bg-[#111827];
+  @apply bg-[#111827];
 }
 
 .dark-text-primary {
-  @apply dark:text-white/90;
+  @apply text-white/90;
 }
 
 .dark-text-secondary {
-  @apply dark:text-white/70;
+  @apply text-white/70;
 }
 
-.light-text-primary {
+/* .light-text-primary {
   @apply text-black/70;
 }
 
 .light-text-secondary {
   @apply text-black/50;
-}
+} */
 
 /* DARK MODE TOGGLES */
 .light-mode-toggle {
@@ -46,7 +46,7 @@ body {
 
 /* NAVIGATION */
 .nav {
-  @apply w-full relative z-10 flex justify-center dark:bg-[#111827];
+  @apply w-full relative z-10 flex justify-center ;
 }
 
 .nav-container {
@@ -54,11 +54,11 @@ body {
 }
 
 .nav-logo {
-  @apply text-xl font-semibold tracking-wide light-text-primary dark-text-primary;
+  @apply text-xl font-semibold tracking-wide dark-text-primary;
 }
 
 .nav-logo-span {
-  @apply light-text-secondary dark-text-secondary;
+  @apply dark-text-secondary;
 }
 
 .nav-links-container {
@@ -66,7 +66,7 @@ body {
 }
 
 .nav-links {
-  @apply text-lg sm:text-base font-light tracking-wide hover:text-black/80 light-text-secondary dark-text-secondary dark:hover:text-white/90 transition duration-300 ease-in;
+  @apply text-lg sm:text-base font-normal tracking-wide dark-text-secondary hover:text-white/90 transition duration-200 ease-in;
 }
 
 /* HERO SECTION */
@@ -79,11 +79,11 @@ body {
 }
 
 .hero-title {
-  @apply text-3xl sm:text-4xl font-semibold tracking-wide light-text-primary dark-text-primary;
+  @apply text-3xl sm:text-4xl font-semibold tracking-wide dark-text-primary;
 }
 
 /* .hero-profile {
-  @apply tracking-wider font-light text-[17px] leading-normal light-text-primary dark-text-secondary mt-1;
+  @apply tracking-wider font-light text-[17px] leading-normal dark-text-secondary mt-1;
 } */
 
 .text-gradient {
@@ -97,7 +97,7 @@ body {
 /* FOOTER */
 
 .footer-text {
-  @apply text-xs sm:text-sm text-black/20 dark:text-white/30;
+  @apply text-xs sm:text-sm text-white/30;
 }
 
 /* PROJECT CARD */
@@ -114,7 +114,7 @@ body {
 }
 
 .project-info-container {
-  @apply flex flex-col gap-4 sm:w-1/2 w-full pr-2 tracking-wide light-text-primary dark-text-primary mt-4 sm:mt-0 ;
+  @apply flex flex-col gap-4 sm:w-1/2 w-full pr-2 tracking-wide dark-text-primary mt-4 sm:mt-0 ;
 }
 
 .project-title {
@@ -122,11 +122,11 @@ body {
 }
 
 .project-summary {
-  @apply text-sm font-light leading-relaxed light-text-secondary dark-text-secondary;
+  @apply text-sm font-light leading-relaxed dark-text-secondary;
 }
 
 .project-card-btn {
-  @apply flex items-center gap-2 text-sm dark-text-primary light-text-primary font-light leading-none p-2.5 bg-white/10 rounded-sm hover:bg-purple-200/20 transition-colors duration-500 ease-in-out;
+  @apply flex items-center gap-2 text-sm dark-text-primary font-light leading-none p-2.5 bg-white/10 rounded-sm hover:bg-purple-200/20 transition-colors duration-500 ease-in-out;
 }
 
 .btn-icon {

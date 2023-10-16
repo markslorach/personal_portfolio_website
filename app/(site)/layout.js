@@ -16,9 +16,9 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <body className={`${poppins.className}` }>
+      <body className={`${poppins.className} bg-colour`}>
         <Providers>
-          <main className="bg-colour">
+          <main>
           <NavBar/>
             {children}
             <Footer/>

@@ -66,7 +66,7 @@ body {
 }
 
 .nav-links {
-  @apply text-base sm:py-1 font-normal tracking-wide dark-text-secondary hover:text-white/90 transition duration-200 ease-in;
+  @apply text-lg sm:text-base sm:py-1 font-normal tracking-wide dark-text-secondary hover:text-white/90 transition duration-200 ease-in;
 }
 
 /* HERO SECTION */

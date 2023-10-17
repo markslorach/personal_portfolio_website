@@ -15,6 +15,9 @@ export default async function Project({ params }) {
     <main className="min-h-screen">
       <div className="flex justify-center pt-24 mx-5">
         <div className="w-[680px] flex flex-col">
+          <h1 className="text-xl sm:text-2xl font-semibold dark-text-primary light-text-primary tracking-wide mb-4">
+            {project.title}
+          </h1>
           <ImageSlider image={project.image} />
           <div className="flex flex-wrap gap-3 sm:gap-0 justify-between">
             <div className="flex gap-3 justify-center sm:justify-start items-start">
@@ -43,9 +46,6 @@ export default async function Project({ params }) {
               </button>
             </div>
           </div>
-          <h1 className="text-xl sm:text-2xl mt-16 font-semibold dark-text-primary light-text-primary tracking-wide mb-4">
-            {project.title}
-          </h1>
 
           <PortableText
             value={project.content}

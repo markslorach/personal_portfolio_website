@@ -1,11 +1,11 @@
 import "../globals.css";
-import { Poppins } from "next/font/google";
+import { Ubuntu } from "next/font/google";
 import Providers from "../Providers";
 import { NavBar } from "./components/NavBar";
 import Footer from "./components/Footer";
-const poppins = Poppins({
+const ubuntu = Ubuntu({
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["300", "400", "500", "700"],
 });
 
 export const metadata = {
@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <body className={`${poppins.className} bg-colour`}>
+      <body className={`${ubuntu.className} bg-colour`}>
         <Providers>
           <main>
           <NavBar/>

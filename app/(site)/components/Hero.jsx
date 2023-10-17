@@ -22,8 +22,8 @@ export const Hero = () => {
         <motion.div variants={animateHero} initial="hidden" animate="show">
           <Image
             src="/images/me.png"
-            width={75}
-            height={75}
+            width={80}
+            height={80}
             alt="Mark Slorach"
             className="hero-image"
           />
@@ -41,6 +41,10 @@ export const Hero = () => {
           , a design and user experience focused junior software developer based
           in Scotland.
         </motion.h1>
+        {/* <p className="leading-relaxed tracking-wider font-extralight text-lg dark-text-secondary">I love creating user-friendly applications with a focus on visual and
+          system design. I'm seeking my first role in the tech industry to help
+          build impactful products and continue to learn and grow as a
+          developer.</p> */}
       </div>
     </section>
   );

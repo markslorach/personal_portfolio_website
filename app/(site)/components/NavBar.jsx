@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion"; 
+import { motion, AnimatePresence } from "framer-motion";
 import { TbMenu2 } from "react-icons/tb";
 import { IoClose } from "react-icons/io5";
 
@@ -24,10 +24,10 @@ export const NavBar = () => {
             </Link>
 
             {!isOpen ? (
-              <motion.button 
+              <motion.button
                 onClick={() => setIsOpen(true)}
                 className="dark-text-primary text-3xl sm:hidden"
-                whileTap={{ scale: 0.8 }} 
+                whileTap={{ scale: 0.8 }}
               >
                 <TbMenu2 />
               </motion.button>
@@ -35,7 +35,7 @@ export const NavBar = () => {
               <motion.button
                 onClick={() => setIsOpen(false)}
                 className="dark-text-primary text-3xl sm:hidden"
-                whileTap={{ scale: 0.8 }} 
+                whileTap={{ scale: 0.8 }}
               >
                 <IoClose />
               </motion.button>
@@ -60,16 +60,16 @@ export const NavBar = () => {
 
       <AnimatePresence>
         {isOpen && (
-          <motion.div 
-            initial={{ height: 0 }} 
-            animate={{ height: isOpen ? "auto" : "0px" }} 
-            exit={{ height: 0 }} 
+          <motion.div
+            initial={{ height: 0 }}
+            animate={{ height: isOpen ? "auto" : "0px" }}
+            exit={{ height: 0 }}
             transition={{ duration: 0.4, ease: "easeInOut" }}
             className="flex justify-center overflow-hidden"
           >
             <div className="w-[680px] flex flex-col px-5">
               <div className="dark:bg-[#111827] h-auto w-full flex flex-col gap-3 pt-4 dark-text-primary">
-              <Link className="nav-links" href="/profile" onClick={closeNav}>
+                <Link className="nav-links" href="/profile" onClick={closeNav}>
                   Profile
                 </Link>
                 <Link className="nav-links" href="/projects" onClick={closeNav}>

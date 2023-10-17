@@ -10,7 +10,7 @@ const CodeBox = () => {
           <div className="w-3 h-3 rounded-full  bg-yellow-500"></div>
           <div className="w-3 h-3 rounded-full  bg-green-500"></div>
         </div>
-        <div className="flex flex-col gap-5 w-full h-full p-5 font-mono text-xs sm:text-sm dark-text-primary">
+        <div className="flex flex-col gap-5 w-full h-full p-5 font-mono text-xs sm:text-sm tracking-wide dark-text-primary">
           <div className="flex flex-col gap-2 ">
             <p>{`> Mark.contact`}</p>
             <p><span>{`[`}</span>"<span className="code-box-links">{`hello@markslorach.com`}</span>", "<span className="code-box-links"><Link  target='_blank' href={"https://www.linkedin.com/in/mfslorach/"}>{`LinkedIn`}</Link></span>", "<span className="code-box-links"><Link target='_blank' href={"https://github.com/mfslorach"}>{`GitHub`}</Link></span>"<span>{`]`}</span> </p>

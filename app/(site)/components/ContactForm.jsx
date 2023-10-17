@@ -31,6 +31,13 @@ export const ContactForm = () => {
   return (
     <div className="flex flex-wrap sm:flex-nowrap gap-20 sm:gap-8">
     <div className="w-full sm:w-1/2 dark-text-primary">
+
+    <div className="avatar mb-8 mt-1.5">
+  <div className="w-36 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+    <img src="/images/ProfileImage.png" />
+  </div>
+</div>
+
       <h1 className="text-4xl tracking-wide font-semibold">Let's chat!</h1>
       <br/>
       <p className="tracking-wide font-light leading-relaxed text-lg dark-text-secondary">I'm always happy to chat so please feel free to fill in the contact form or reach out on <Link href={"https://www.linkedin.com/in/mfslorach/"} target="_blank">
@@ -44,7 +51,7 @@ export const ContactForm = () => {
         onSubmit={sendEmail}
       >
         <div className="flex flex-col gap-2">
-          <label className="tracking-wide font-light">Name</label>
+          <label className="tracking-wide font-light leading-none">Name</label>
           <input
             className="w-full h-12 px-4 rounded-sm bg-white/10"
             type="text"
@@ -53,7 +60,7 @@ export const ContactForm = () => {
           />
         </div>
         <div className="flex flex-col gap-2">
-          <label className="tracking-wide font-light">Email</label>
+          <label className="tracking-wide font-light leading-none">Email</label>
           <input
             className="w-full h-12 px-4 rounded-sm bg-white/10"
             type="email"
@@ -62,7 +69,7 @@ export const ContactForm = () => {
           />
         </div>
         <div className="flex flex-col gap-2">
-          <label className="tracking-wide font-light">Message</label>
+          <label className="tracking-wide font-light leading-none">Message</label>
           <textarea
             className="w-full h-36 p-4 rounded-sm bg-white/10"
             name="message"

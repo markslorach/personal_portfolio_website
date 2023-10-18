@@ -19,7 +19,9 @@ export default async function Project({ params }) {
             {project.title}
           </h1>
           <ImageSlider image={project.image} />
-          <div className="flex flex-wrap gap-3 sm:gap-0 justify-between">
+          
+          <section>
+            <h1 className="tracking-wide font-semibold mb-2">Tech Stack</h1>
             <div className="flex gap-3 justify-center sm:justify-start items-start">
               {project.techStack.map((stack) => (
                 <div
@@ -30,6 +32,10 @@ export default async function Project({ params }) {
                 </div>
               ))}
             </div>
+          </section>
+
+          <section>
+            <h1 className="tracking-wide font-semibold mb-2 mt-6">Links</h1>
             <div className="flex gap-3">
               <button className="project-card-btn">
                 <span className="btn-icon">
@@ -45,7 +51,7 @@ export default async function Project({ params }) {
                 <span className="hidden sm:inline">Demo</span>
               </button>
             </div>
-          </div>
+          </section>
 
           <PortableText
             value={project.content}

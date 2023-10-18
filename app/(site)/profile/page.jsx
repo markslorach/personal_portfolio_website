@@ -1,12 +1,11 @@
 import React from "react";
-import { NavBar } from "../components/NavBar";
 
 const ProfilePage = () => {
   return (
     <div className="flex justify-center my-24 mx-5">
       <div className="w-[680px] flex flex-col">
       <section className="flex justify-between items-center mb-14 gap-5">
-      <h1 className="text-3xl font-semibold tracking-wide">Hello! I'm Mark <span>👋</span> </h1>
+      <h1 className="text-3xl font-semibold tracking-wide">Hello! <span>👋</span></h1>
         </section>
         <section>
           <p>Test</p>

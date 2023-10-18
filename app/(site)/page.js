@@ -27,7 +27,7 @@ const Home = () => {
           <div className="flex gap-1 items-center mt-6 w-48 dark-text-secondary hover:text-white/90 transition duration-300 ease-in-out ">
             <Link
               href="/projects"
-              className=" text-base font-medium leading-none tracking-wide"
+              className=" text-lg font-medium leading-none tracking-wide"
             >
               View all projects
             </Link>

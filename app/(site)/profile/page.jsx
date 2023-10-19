@@ -10,35 +10,35 @@ const ProfilePage = () => {
         <section className="mt-20 dark-text-primary text-base font-light tracking-wide leading-relaxed">
           <p className="mb-5">
             I am a recent graduate of a 16 week software development bootcamp at
-            CodeClan. During the course, I built a solid understanding of the
+            CodeClan. I built a solid understanding of the
             fundamentals of programming through Python,{" "}
-            <span className="font-semibold">JavaScript</span>, and Java, as well
+            <span className="font-bold">JavaScript</span>, and Java, as well
             as working with Test Driven Development,{" "}
-            <span className="font-semibold">Frameworks</span>, and{" "}
-            <span className="font-semibold">Databases.</span>
+            <span className="font-bold">Frameworks</span>, and{" "}
+            <span className="font-bold">Databases.</span>
           </p>
           <p className="mb-5">
             During my studies, I was drawn to the visual and system design
             aspect of building user-friendly applications. The intensity of the
             course allowed me to pick up skills quickly and demonstrate my
             understanding through creating{" "}
-            <span className="font-semibold text-blue-400">
+            <span className="font-bold text-blue-400">
               <Link href={"/projects"}>full-stack projects</Link>
             </span>
             .
           </p>
           <p className="mb-5">
             Currently, I am enjoying working with and learning about{" "}
-            <span className="font-semibold">Next.js 13</span>,{" "}
-            <span className="font-semibold">Tailwind CSS</span>, and how to
+            <span className="font-bold">Next.js 13</span>,{" "}
+            <span className="font-bold">Tailwind CSS</span>, and how to
             incorporate{" "}
-            <span className="font-semibold">Content Management Systems</span> to
+            <span className="font-bold">Content Management Systems</span> to
             create dynamic content. I love the speed, modularity and flexibility
             frameworks provide.
           </p>
           <p className="mb-5">
             Before my career change, I worked as a{" "}
-            <span className="font-semibold">
+            <span className="font-bold">
               freelance videographer and drone operator
             </span>{" "}
             for 6 years. In this role, I worked closely with clients to deliver
@@ -52,10 +52,10 @@ const ProfilePage = () => {
           <p>
             I am now looking for my first role in the tech industry where I can
             bring my{" "}
-            <span className="font-semibold">enthusiasm and creativity</span> and
+            <span className="font-bold">enthusiasm and creativity</span> and
             continue to learn and grow as a developer. I'm eager to work with a
             team who are building{" "}
-            <span className="font-semibold">
+            <span className="font-bold">
               {" "}
               innovative and user-friendly applications
             </span>

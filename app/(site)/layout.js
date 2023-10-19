@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${ubuntu.className} bg-colour`}>
         <Providers>
-          <main className="relative min-h-screen">
+          <main>
           <NavBar/>
             {children}
             <Footer/>

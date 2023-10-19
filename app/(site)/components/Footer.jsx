@@ -5,7 +5,7 @@ import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="flex justify-center">
-      <div className="w-[680px] flex justify-center py-10 gap-2 dark-text-secondary">
+      <div className="w-[680px] flex justify-center py-10 gap-2 dark-text-secondary absolute bottom-0">
       <div className="flex justify-between items-center w-full px-5 sm:px-0">
       <p className="dark-text-secondary text-sm leading-none">© Mark Slorach</p>
       <div className="flex gap-2">
@@ -28,7 +28,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-// <p className="footer-text">
-//   Made with<span> ❤︎ </span>using Next JS and Tailwind CSS.
-// </p>

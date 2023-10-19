@@ -9,7 +9,7 @@ const ProfilePage = () => {
         <Hero />
         <section className="mt-20 dark-text-primary text-base font-light tracking-wide leading-relaxed">
           <p className="text-base font-light tracking-wide leading-relaxed mb-5">
-            I am a recent graduate from a 16 week software development bootcamp
+            I am a recent graduate of a 16 week software development bootcamp
             at CodeClan. During the course, I built a solid understanding of the
             fundamentals of programming through Python,{" "}
             <span className="font-semibold">JavaScript</span> and Java as well

@@ -8,29 +8,29 @@ const ProfilePage = () => {
       <div className="w-[680px] flex flex-col">
         <Hero />
         <section className="mt-20 dark-text-primary text-base font-light tracking-wide leading-relaxed">
-          <p className="text-base font-light tracking-wide leading-relaxed mb-5">
-            I am a recent graduate of a 16 week software development bootcamp
-            at CodeClan. During the course, I built a solid understanding of the
+          <p className="mb-5">
+            I am a recent graduate of a 16 week software development bootcamp at
+            CodeClan. During the course, I built a solid understanding of the
             fundamentals of programming through Python,{" "}
-            <span className="font-semibold">JavaScript</span> and Java as well
+            <span className="font-semibold">JavaScript</span>, and Java, as well
             as working with Test Driven Development,{" "}
-            <span className="font-semibold">Frameworks</span> and{" "}
+            <span className="font-semibold">Frameworks</span>, and{" "}
             <span className="font-semibold">Databases.</span>
           </p>
           <p className="mb-5">
-            Drawn to the visual and system design aspect of building
-            user-friendly applications. The intensity of the course allowed me
-            to pick up skills quickly and demonstrate my understanding through
-            creating{" "}
+            During my studies, I was drawn to the visual and system design
+            aspect of building user-friendly applications. The intensity of the
+            course allowed me to pick up skills quickly and demonstrate my
+            understanding through creating{" "}
             <span className="font-semibold text-blue-400">
               <Link href={"/projects"}>full-stack projects</Link>
             </span>
             .
           </p>
           <p className="mb-5">
-            Curently, I am enjoying working with and learning about{" "}
-            <span className="font-semibold">Next.js 13</span>,
-            <span className="font-semibold"> Tailwind CSS</span> and how to
+            Currently, I am enjoying working with and learning about{" "}
+            <span className="font-semibold">Next.js 13</span>,{" "}
+            <span className="font-semibold">Tailwind CSS</span>, and how to
             incorporate{" "}
             <span className="font-semibold">Content Management Systems</span> to
             create dynamic content. I love the speed, modularity and flexibility
@@ -54,7 +54,7 @@ const ProfilePage = () => {
             bring my{" "}
             <span className="font-semibold">enthusiasm and creativity</span> and
             continue to learn and grow as a developer. I'm eager to work with a
-            team who are building
+            team who are building{" "}
             <span className="font-semibold">
               {" "}
               innovative and user-friendly applications
@@ -63,7 +63,11 @@ const ProfilePage = () => {
           </p>
           <p className="mt-20 text-2xl font-semibold">
             If you have a project in mind or a role you think I’d be suited for
-            I’d love to <span className=" text-gradient text-gradient-hover"><Link href={"/contact"}>hear from you</Link></span>.
+            I’d love to{" "}
+            <span className=" text-gradient text-gradient-hover">
+              <Link href={"/contact"}>hear from you</Link>
+            </span>
+            .
           </p>
         </section>
       </div>

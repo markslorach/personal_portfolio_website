@@ -1,5 +1,6 @@
 import React from "react";
 import { Hero } from "../components/Hero";
+import Link from "next/link";
 
 const ProfilePage = () => {
   return (
@@ -22,7 +23,7 @@ const ProfilePage = () => {
             to pick up skills quickly and demonstrate my understanding through
             creating{" "}
             <span className="font-semibold text-blue-400">
-              full-stack projects
+              <Link href={"/projects"}>full-stack projects</Link>
             </span>
             .
           </p>
@@ -49,7 +50,7 @@ const ProfilePage = () => {
             get tired of visiting Glencoe!
           </p>
           <p>
-            I’m now looking for my first role in the tech industry where I can
+            I am now looking for my first role in the tech industry where I can
             bring my{" "}
             <span className="font-semibold">enthusiasm and creativity</span> and
             continue to learn and grow as a developer. I'm eager to work with a
@@ -62,7 +63,7 @@ const ProfilePage = () => {
           </p>
           <p className="mt-20 text-2xl font-semibold">
             If you have a project in mind or a role you think I’d be suited for
-            I’d love to <span className=" text-gradient">hear from you</span>.
+            I’d love to <span className=" text-gradient text-gradient-hover"><Link href={"/contact"}>hear from you</Link></span>.
           </p>
         </section>
       </div>
@@ -71,13 +72,3 @@ const ProfilePage = () => {
 };
 
 export default ProfilePage;
-
-{
-  /* <div className="avatar">
-              <div className="w-28 rounded-full">
-                <img src="/images/ProfileImage.png" />
-              </div> */
-}
-{
-  /* </div> */
-}

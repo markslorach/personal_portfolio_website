@@ -15,11 +15,11 @@ export default async function Project({ params }) {
     <main>
       <div className="flex justify-center pt-28 mx-5">
         <div className="w-[680px] flex flex-col">
+          <ImageSlider image={project.image} />
           <h1 className="text-xl sm:text-2xl font-semibold dark-text-primary light-text-primary tracking-wide mb-4">
             {project.title}
           </h1>
-          <ImageSlider image={project.image} />
-          
+
           <section>
             <h1 className="tracking-wide font-semibold mb-2">Tech Stack</h1>
             <div className="flex gap-3 justify-center sm:justify-start items-start">

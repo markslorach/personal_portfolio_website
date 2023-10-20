@@ -7,10 +7,10 @@ const ProfilePage = () => {
     <div className="flex justify-center my-24 mx-5">
       <div className="w-[680px] flex flex-col">
         <Hero />
-        <section className="mt-20 dark-text-primary text-base font-light tracking-wide leading-relaxed">
+        <section className="mt-20 dark-text-primary text-[16px] sm:text-[18px] font-light tracking-wide leading-relaxed">
           <p className="mb-5">
             I am a recent graduate of a 16 week software development bootcamp at
-            CodeClan. I built a solid understanding of the
+            CodeClan, where I built a solid understanding of the
             fundamentals of programming through Python,{" "}
             <span className="font-bold">JavaScript</span>, and Java, as well
             as working with Test Driven Development,{" "}
@@ -19,7 +19,7 @@ const ProfilePage = () => {
           </p>
           <p className="mb-5">
             During my studies, I was drawn to the visual and system design
-            aspect of building user-friendly applications. The intensity of the
+            aspect of building user-friendly applications. The pace of the
             course allowed me to pick up skills quickly and demonstrate my
             understanding through creating{" "}
             <span className="font-bold text-blue-400">
@@ -50,7 +50,7 @@ const ProfilePage = () => {
             get tired of visiting Glencoe!
           </p>
           <p>
-            I am now looking for my first role in the tech industry where I can
+            I'm now looking for my first role in the tech industry where I can
             bring my{" "}
             <span className="font-bold">enthusiasm and creativity</span> and
             continue to learn and grow as a developer. I'm eager to work with a

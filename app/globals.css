@@ -79,7 +79,7 @@ body {
 }
 
 .hero-title {
-  @apply text-4xl  font-semibold tracking-wide dark-text-primary;
+  @apply text-3xl sm:text-4xl font-semibold tracking-wide dark-text-primary;
 }
 
 /* .hero-profile {

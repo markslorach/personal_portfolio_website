@@ -29,21 +29,21 @@ export const ContactForm = () => {
   };
 
   return (
-    <div className="flex flex-wrap sm:flex-nowrap gap-20 sm:gap-8">
-      <div className="w-full sm:w-1/2 dark-text-primary">
+    <section className="flex flex-wrap sm:flex-nowrap gap-20 sm:gap-8">
+      <aside className="w-full sm:w-1/2 dark-text-primary">
         <h1 className="text-4xl tracking-wide font-semibold">Let's chat!</h1>
         <br />
         <p className="tracking-wide font-light leading-normal text-lg dark-text-secondary">
           I'm always happy to chat so please feel free to fill in the contact
           form or reach out on{" "}
           <Link href={"https://www.linkedin.com/in/mfslorach/"} target="_blank">
-            <span className="text-gradient text-gradient-hover font-semibold">
+            <strong className="text-gradient text-gradient-hover font-semibold">
               LinkedIn
-            </span>
+            </strong>
           </Link>
           .
         </p>
-      </div>
+      </aside>
 
       <form
         className="flex flex-col gap-5 dark-text-primary w-full sm:w-1/2"
@@ -85,6 +85,6 @@ export const ContactForm = () => {
           <input type="submit" value="Send" />
         </button>
       </form>
-    </div>
+    </section>
   );
 };

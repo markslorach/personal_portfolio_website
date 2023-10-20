@@ -19,7 +19,7 @@ export const NavBar = () => {
           <div className="flex justify-between w-full items-center">
             <Link onClick={closeNav} href="/">
               <h2 className="nav-logo">
-                mark<span className="nav-logo-span">slorach</span>.
+                mark<strong className="nav-logo-span">slorach</strong>.
               </h2>
             </Link>
 
@@ -43,17 +43,23 @@ export const NavBar = () => {
           </div>
 
           <div className="nav-links-container">
-            <div className="flex gap-5 sm:flex-none">
-              <Link className="nav-links hidden sm:inline" href="/profile">
-                Profile
-              </Link>
-              <Link className="nav-links hidden sm:inline" href="/projects">
-                Projects
-              </Link>
-              <Link className="nav-links hidden sm:inline" href="/contact">
-                Contact
-              </Link>
-            </div>
+            <ul className="flex gap-5 sm:flex-none">
+              <li>
+                <Link className="nav-links hidden sm:inline" href="/profile">
+                  Profile
+                </Link>
+              </li>
+              <li>
+                <Link className="nav-links hidden sm:inline" href="/projects">
+                  Projects
+                </Link>
+              </li>
+              <li>
+                <Link className="nav-links hidden sm:inline" href="/contact">
+                  Contact
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
@@ -68,17 +74,23 @@ export const NavBar = () => {
             className="flex justify-center overflow-hidden"
           >
             <div className="w-[680px] flex flex-col px-5">
-              <div className="h-auto w-full flex flex-col gap-3 pt-4 dark-text-primary">
-                <Link className="nav-links" href="/profile" onClick={closeNav}>
-                  Profile
-                </Link>
-                <Link className="nav-links" href="/projects" onClick={closeNav}>
-                  Projects
-                </Link>
-                <Link className="nav-links" href="/contact" onClick={closeNav}>
-                  Contact
-                </Link>
-              </div>
+              <ul className="h-auto w-full flex flex-col gap-3 pt-4 dark-text-primary">
+                <li>
+                  <Link className="nav-links" href="/profile" onClick={closeNav}>
+                    Profile
+                  </Link>
+                </li>
+                <li>
+                  <Link className="nav-links" href="/projects" onClick={closeNav}>
+                    Projects
+                  </Link>
+                </li>
+                <li>
+                  <Link className="nav-links" href="/contact" onClick={closeNav}>
+                    Contact
+                  </Link>
+                </li>
+              </ul>
             </div>
           </motion.div>
         )}

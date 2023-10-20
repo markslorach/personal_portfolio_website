@@ -29,25 +29,25 @@ const ProjectCard = ({ slug, title, summary, github, image }) => {
 
   return (
     <Link href={`/projects/${slug}`}>
-      <motion.div
+      <motion.article
         {...motionSettings}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         className="card-container"
       >
-        <div className="img-container">
+        <figure className="img-container">
           <img src={image} alt={title} className="card-img" />
-        </div>
+        </figure>
         <div className="project-info-container">
           <h2 className="project-title">
             {title}
-            <span
+            <strong
               className={`text-lg ${
                 isHovered ? "translate-x-0.5 -translate-y-0.5" : ""
               } transition-transform duration-500 ease-in-out`}
             >
               <RiArrowRightUpLine />
-            </span>
+            </strong>
           </h2>
           <p className="project-summary">{summary}</p>
 
@@ -80,7 +80,7 @@ const ProjectCard = ({ slug, title, summary, github, image }) => {
             </div>
           </div>
         </div>
-      </motion.div>
+      </motion.article>
     </Link>
   );
 };

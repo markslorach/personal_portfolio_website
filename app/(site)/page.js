@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <main>
       <div className="flex justify-center py-20 sm:py-24 mx-5">
-        <div className="w-[680px] flex flex-col">
+        <article className="w-[680px] flex flex-col">
           <Hero />
           <CodeBox />
           <h2 className=" text-xl sm:text-2xl font-semibold dark-text-primary tracking-wide">
@@ -31,12 +31,12 @@ const Home = () => {
             >
               View all projects
             </Link>
-            <p className="text-base font-bold">
+            <strong className="text-base font-bold">
               <RiArrowRightLine />
-            </p>
+            </strong>
           </div>
           <GetInTouch />
-        </div>
+        </article>
       </div>
     </main>
   );

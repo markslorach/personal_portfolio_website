@@ -62,7 +62,7 @@ body {
 }
 
 .nav-links-container {
-  @apply flex justify-between gap-5 w-full sm:w-min text-black/80 items-center mt-3 sm:mt-0;
+  @apply flex justify-between gap-5 w-full sm:w-min text-black/80 items-center ;
 }
 
 .nav-links {

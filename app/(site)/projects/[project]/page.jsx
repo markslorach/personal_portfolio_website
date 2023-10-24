@@ -21,11 +21,11 @@ export default async function Project({ params }) {
           </h1>
 
           <section>
-            <h1 className="tracking-wide font-semibold mb-2">Tech Stack</h1>
+            <h1 className="tracking-wide font-semibold mb-2 dark-text-primary">Tech Stack</h1>
             <div className="flex gap-3 justify-center sm:justify-start items-start">
               {project.techStack.map((stack) => (
                 <div
-                  className="p-2.5 bg-white/5 h-min rounded-sm font-mono text-[10px] sm:text-xs dark-text-primary light-text-primary"
+                  className="p-2.5 bg-white/5 h-min rounded-sm font-mono text-[10px] sm:text-xs dark-text-primary"
                   key={stack}
                 >
                   {stack}

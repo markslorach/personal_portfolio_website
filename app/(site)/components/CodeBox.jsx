@@ -21,7 +21,7 @@ const CodeBox = () => {
           </div>
           <div className="flex flex-col gap-2 ">
             <p>{`> Mark.skills`}</p>
-            <p>{`["JavaScript", "React", "Java", "PostgreSQL", "MongoDB"]`}</p>
+            <p>{`["JavaScript", "React", "Java", "PostgreSQL", "MongoDB", "CMS"]`}</p>
           </div>
           <div className="flex flex-col gap-2 ">
             <p>{`>`} <span className="blink">|</span></p>

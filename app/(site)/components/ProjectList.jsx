@@ -29,6 +29,7 @@ export default function ProjectList({ showAll }) {
           github={project.github}
           image={project.image}
           slug={project.slug}
+          tech={project.techStack}
         />
       ))}
     </section>

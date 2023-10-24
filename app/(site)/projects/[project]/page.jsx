@@ -16,26 +16,7 @@ export default async function Project({ params }) {
       <div className="flex justify-center pt-28 mx-5">
         <div className="w-[680px] flex flex-col">
           <ImageSlider image={project.image} />
-          <h1 className="text-xl sm:text-2xl font-semibold dark-text-primary light-text-primary tracking-wide mb-4">
-            {project.title}
-          </h1>
-
-          <section>
-            <h1 className="tracking-wide font-semibold mb-2 dark-text-primary">Tech Stack</h1>
-            <div className="flex gap-3 justify-center sm:justify-start items-start">
-              {project.techStack.map((stack) => (
-                <div
-                  className="p-2.5 bg-white/5 h-min rounded-sm font-mono text-[10px] sm:text-xs dark-text-primary"
-                  key={stack}
-                >
-                  {stack}
-                </div>
-              ))}
-            </div>
-          </section>
-
-          <section>
-            <h1 className="tracking-wide font-semibold mb-2 mt-6">Links</h1>
+          <section className="mb-20">
             <div className="flex gap-3">
               <button className="project-card-btn">
                 <span className="btn-icon">
@@ -52,6 +33,24 @@ export default async function Project({ params }) {
               </button>
             </div>
           </section>
+          <h1 className="text-xl sm:text-3xl mb-5 font-semibold dark-text-primary light-text-primary tracking-wide">
+            {project.title}
+          </h1>
+
+          <section>
+            {/* <h1 className="tracking-wide font-semibold mb-2 dark-text-primary">Tech Stack</h1> */}
+            {/* <div className="flex gap-3 justify-center sm:justify-start items-start mb-8">
+              {project.techStack.map((stack) => (
+                <div
+                  className="p-2.5 bg-white/5 h-min rounded-sm font-mono text-[10px] sm:text-xs dark-text-primary"
+                  key={stack}
+                >
+                  {stack}
+                </div>
+              ))}
+            </div> */}
+          </section>
+
 
           <PortableText
             value={project.content}

@@ -7,38 +7,38 @@ const ProfilePage = () => {
     <main className="flex justify-center py-20 sm:py-24 mx-5">
       <article className="w-[680px] flex flex-col">
         <Hero />
-        <section className="mt-20 text-white/70 text-[16px] sm:text-[18px] font-light tracking-wide leading-relaxed">
+        <section className="mt-20 text-white/70 text-[16px] sm:text-[17px] font-light tracking-wide leading-relaxed">
           <p className="mb-5">
             I am a recent graduate of a 16-week software development bootcamp at
             CodeClan, where I built a solid understanding of programming
             fundamentals through Python,{" "}
-            <strong className="font-bold text-white/90">JavaScript</strong>, and Java and
+            <strong className="font-normal text-white/90">JavaScript</strong>, and Java and
             worked with Test Driven Development,{" "}
-            <strong className="font-bold text-white/90">Frameworks</strong>, and{" "}
-            <strong className="font-bold text-white/90">Databases.</strong>
+            <strong className="font-normal text-white/90">Frameworks</strong>, and{" "}
+            <strong className="font-normal text-white/90">Databases.</strong>
           </p>
           <p className="mb-5">
             I was drawn to the visual and system design aspects of building
             user-friendly applications during my studies. The pace of the course
             allowed me to pick up skills quickly and demonstrate my
             understanding through creating{" "}
-            <strong className="font-bold text-blue-400 hover:text-blue-300 transition duration-300 ease-in-out">
+            <strong className="font-normal text-blue-400 hover:text-blue-300 transition duration-300 ease-in-out">
               <Link href={"/projects"}>full-stack projects</Link>
             </strong>
             .
           </p>
           <p className="mb-5">
             Currently, I am enjoying working with and learning about{" "}
-            <strong className="font-bold text-white/90">Next.js 13</strong>,{" "}
-            <strong className="font-bold text-white/90">Tailwind CSS</strong>, and how to
+            <strong className="font-normal text-white/90">Next.js 13</strong>,{" "}
+            <strong className="font-normal text-white/90">Tailwind CSS</strong>, and how to
             incorporate{" "}
-            <strong className="font-bold text-white/90">Content Management Systems</strong> to
+            <strong className="font-normal text-white/90">Content Management Systems</strong> to
             create dynamic content. I love the speed, modularity and flexibility
             frameworks provide.
           </p>
           <p className="mb-5">
             Before my career change, I worked as a{" "}
-            <strong className="font-bold text-white/90">
+            <strong className="font-normal text-white/90">
               freelance videographer and drone operator
             </strong>{" "}
             for 6 years. In this role, I worked closely with clients to deliver
@@ -52,10 +52,10 @@ const ProfilePage = () => {
           <p>
             I'm now looking for my first role in the tech industry where I can
             bring my{" "}
-            <strong className="font-bold text-white/90">enthusiasm and creativity</strong> and
+            <strong className="font-normal text-white/90">enthusiasm and creativity</strong> and
             continue to learn and grow as a developer. I'm eager to work with a
             team who are building{" "}
-            <strong className="font-bold text-white/90">
+            <strong className="font-normal text-white/90">
               {" "}
               innovative and user-friendly applications
             </strong>

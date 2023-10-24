@@ -15,7 +15,7 @@ const motionSettings = {
   transition: { duration: 0.5 },
 };
 
-const ProjectCard = ({ slug, title, summary, github, image }) => {
+const ProjectCard = ({ slug, title, summary, github, image, tech }) => {
   const [hasMounted, setHasMounted] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -50,7 +50,6 @@ const ProjectCard = ({ slug, title, summary, github, image }) => {
             </strong>
           </h2>
           <p className="project-summary">{summary}</p>
-
           <div className="flex gap-3">
             <div className="group">
               <button

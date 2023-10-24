@@ -12,11 +12,14 @@ export const RichTextComponents = {
   },
   block: {
     h1: ({ children }) => (
-      <h1 className="text-2xl tracking-wider">{children}</h1>
+      <h1 className="text-lg font-semibold tracking-wide dark-text-primary mt-6 mb-3">{children}</h1>
     ),
-    h2: ({ children }) => <h2 className="text-4xl">{children}</h2>,
+    h2: ({ children }) => <h2 className="text-lg font-semibold tracking-wide dark-text-primary mt-5 mb-3">{children}</h2>,
+    strong: ({ children }) => (
+      <strong className="font-bold">{children}</strong>
+    ),
     normal: ({ children }) => (
-      <p className="dark-text-primary text-[16px] sm:text-[18px] font-light tracking-wide leading-relaxed mb-2">
+      <p className="text-white/70 text-[16px] sm:text-[17px] font-light tracking-wide leading-relaxed">
         {children}
       </p>
     ),
@@ -27,7 +30,8 @@ export const RichTextComponents = {
   },
   listItem: {
     bullet: ({ children }) => (
-      <li className="list-disc ml-10 font-light text-[16px] sm:text-[18px] tracking-wide leading-relaxed dark-text-primary">
+  
+      <li className="list-disc ml-10 mb-1 font-light text-[16px] sm:text-[17px] tracking-wide leading-relaxed text-white/70">
         {children}
       </li>
     ),

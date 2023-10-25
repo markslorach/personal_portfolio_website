@@ -75,7 +75,7 @@ body {
 }
 
 .hero-image {
-  @apply rounded-3xl;
+  @apply rounded-xl;
 }
 
 .hero-title {

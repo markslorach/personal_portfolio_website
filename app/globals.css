@@ -91,7 +91,6 @@ body {
 }
 
 /* FOOTER */
-
 .footer-text {
   @apply text-xs sm:text-sm text-white/30;
 }

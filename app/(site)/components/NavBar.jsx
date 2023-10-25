@@ -74,7 +74,7 @@ export const NavBar = () => {
             className="flex justify-center overflow-hidden"
           >
             <div className="w-[680px] flex flex-col px-5">
-              <ul className="h-auto w-full flex flex-col gap-3 pt-4 dark-text-primary">
+              <ul className="h-auto w-full flex flex-col gap-3 pt-8 dark-text-primary">
                 <li>
                   <Link className="nav-links" href="/profile" onClick={closeNav}>
                     Profile

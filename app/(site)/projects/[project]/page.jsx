@@ -22,7 +22,7 @@ export default async function Project({ params }) {
                 <span className="btn-icon">
                   <FaGithub />
                 </span>
-                <span className="hidden sm:inline">GitHub</span>
+                <span>GitHub</span>
               </button>
 
               {project.demo && (

@@ -82,10 +82,6 @@ body {
   @apply text-3xl sm:text-4xl font-semibold tracking-wide dark-text-primary;
 }
 
-/* .hero-profile {
-  @apply tracking-wider font-light text-[17px] leading-normal dark-text-secondary mt-1;
-} */
-
 .text-gradient {
   @apply text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400;
 }
@@ -102,7 +98,7 @@ body {
 
 /* PROJECT CARD */
 .card-container {
-  @apply sm:flex  flex-wrap sm:flex-nowrap gap-5 w-full p-4 mt-6 bg-white/5 rounded-sm hover:bg-blue-300/10 transition-colors duration-500 ease-in-out;
+  @apply sm:flex flex-wrap sm:flex-nowrap gap-5 w-full p-4 mt-6 bg-white/5 rounded-sm hover:bg-blue-300/10 transition-colors duration-500 ease-in-out;
 }
 
 .img-container {

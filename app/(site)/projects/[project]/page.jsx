@@ -25,18 +25,25 @@ export default async function Project({ params }) {
                 <span className="hidden sm:inline">GitHub</span>
               </button>
 
-              <button className="project-card-btn">
-                <span className="btn-icon">
-                  <BsFillLightningChargeFill />
-                </span>
-                <span className="hidden sm:inline">Demo</span>
-              </button>
+              {project.demo && (
+                <button
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.open(`${project.demo}`, "_blank");
+                  }}
+                  className="project-card-btn"
+                >
+                  <span className="btn-icon">
+                    <BsFillLightningChargeFill />
+                  </span>
+                  Demo
+                </button>
+              )}
             </div>
           </section>
           <h1 className="text-xl sm:text-3xl mb-5 font-semibold dark-text-primary light-text-primary tracking-wide">
             {project.title}
           </h1>
-
 
           <PortableText
             value={project.content}
@@ -48,7 +55,8 @@ export default async function Project({ params }) {
   );
 }
 
-{/* 
+{
+  /* 
           <section>
             <h1 className="tracking-wide font-semibold mb-2 dark-text-primary">Tech Stack</h1>
             <div className="flex gap-3 justify-center sm:justify-start items-start mb-8">
@@ -61,4 +69,5 @@ export default async function Project({ params }) {
                 </div>
               ))}
             </div>
-          </section> */}
+          </section> */
+}

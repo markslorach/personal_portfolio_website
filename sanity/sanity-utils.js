@@ -13,6 +13,7 @@ export async function getProjects() {
         github,
         demo,
         summary,
+        techStack,
         "image": image.asset->url,
         "content": content[]{
             ...,
@@ -20,8 +21,7 @@ export async function getProjects() {
                 _id,
                 url
             }
-        },
-        techStack
+        }
     }`
   );
 }
@@ -37,6 +37,7 @@ export async function getProject(slug) {
             github,
             demo,
             summary,
+            techStack,
             "image": image.asset->url,
             "content": content[]{
                 ...,
@@ -44,8 +45,7 @@ export async function getProject(slug) {
                     _id,
                     url
                 }
-            },
-            techStack
+            }
         }`,
     { slug }
   );

@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { RiArrowLeftSFill, RiArrowRightSFill } from "react-icons/ri";
@@ -34,36 +34,35 @@ export default function ImageSlider({ image }) {
   };
 
   return (
+    <motion.div
+      className="relative overflow-hidden rounded-sm mb-3"
+      initial="hidden"
+      animate="show"
+      variants={animateImageIn}
+    >
+      <img src={image} className="w-full" alt="Feature" />
 
-      <motion.div
-        className="relative overflow-hidden rounded-sm mb-3"
-        initial="hidden"
-        animate="show"
-        variants={animateImageIn}
+      <motion.button
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 0.7 }}
+        exit={{ opacity: 0, pointerEvents: "none" }}
+        whileHover={{ opacity: 1 }}
+        className="absolute left-2 top-1/2 -mt-4 flex h-8 w-8 items-center justify-center rounded-sm bg-white/50"
+        onClick={() => setIndex(index - 1)}
       >
-        <img src={image} className="w-full" alt="Feature" />
+        <RiArrowLeftSFill className="h-6 w-6 text-slate-800/70" />
+      </motion.button>
 
-        <motion.button
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 0.7 }}
-          exit={{ opacity: 0, pointerEvents: "none" }}
-          whileHover={{ opacity: 1 }}
-          className="absolute left-2 top-1/2 -mt-4 flex h-8 w-8 items-center justify-center rounded-sm bg-white/50"
-          onClick={() => setIndex(index - 1)}
-        >
-          <RiArrowLeftSFill className="h-6 w-6 text-slate-800/70" />
-        </motion.button>
-
-        <motion.button
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 0.7 }}
-          exit={{ opacity: 0, pointerEvents: "none" }}
-          whileHover={{ opacity: 1 }}
-          className="absolute right-2 top-1/2 -mt-4 flex h-8 w-8 items-center justify-center rounded-sm bg-white/50"
-          onClick={() => setIndex(index + 1)}
-        >
-          <RiArrowRightSFill className="h-6 w-6 text-slate-800/70" />
-        </motion.button>
-      </motion.div>
+      <motion.button
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 0.7 }}
+        exit={{ opacity: 0, pointerEvents: "none" }}
+        whileHover={{ opacity: 1 }}
+        className="absolute right-2 top-1/2 -mt-4 flex h-8 w-8 items-center justify-center rounded-sm bg-white/50"
+        onClick={() => setIndex(index + 1)}
+      >
+        <RiArrowRightSFill className="h-6 w-6 text-slate-800/70" />
+      </motion.button>
+    </motion.div>
   );
 }

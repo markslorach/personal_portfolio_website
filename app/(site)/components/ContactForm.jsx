@@ -20,7 +20,7 @@ export const ContactForm = () => {
       .then(
         (result) => {
           // console.log(result.text);
-          alert("Thanks! Email sent. I'll be in touch soon.");
+          alert("Thanks! I'll be in touch soon.");
         },
         (error) => {
           console.log(error.text);
@@ -33,7 +33,7 @@ export const ContactForm = () => {
       <aside className="w-full sm:w-1/2 dark-text-primary">
         <h1 className="text-4xl tracking-wide font-semibold">Let's chat!</h1>
         <br />
-        <p className="tracking-wide font-light leading-normal text-lg dark-text-secondary">
+        <p className="tracking-wide font-light leading-normal text-[17px] dark-text-secondary">
           I'm always happy to chat so please feel free to fill in the contact
           form or reach out on{" "}
           <Link href={"https://www.linkedin.com/in/mfslorach/"} target="_blank">

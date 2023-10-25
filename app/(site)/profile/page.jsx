@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const ProfilePage = () => {
   return (
-    <main className="flex justify-center py-20 sm:py-24 mx-5">
+    <main className="flex justify-center my-28 mx-5">
       <article className="w-[680px] flex flex-col">
         <Hero />
         <section className="mt-20 text-white/70 text-[16px] sm:text-[17px] font-light tracking-wide leading-relaxed">

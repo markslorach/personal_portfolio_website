@@ -31,6 +31,7 @@ export default function ProjectList({ showAll }) {
           title={project.title}
           summary={project.summary}
           github={project.github}
+          demo={project.demo}
           image={project.image}
           slug={project.slug}
           tech={project.techStack}

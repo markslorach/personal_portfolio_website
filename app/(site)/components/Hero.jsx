@@ -10,8 +10,8 @@ export const Hero = () => {
         <figure>
           <Image
             src="/images/me.png"
-            width={80}
-            height={80}
+            width={70}
+            height={70}
             alt="Mark Slorach"
             className="hero-image"
           />

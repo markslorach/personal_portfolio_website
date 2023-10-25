@@ -15,7 +15,7 @@ const motionSettings = {
   transition: { duration: 0.5 },
 };
 
-const ProjectCard = ({ slug, title, summary, github, image, tech }) => {
+const ProjectCard = ({ slug, title, summary, github, demo, image }) => {
   const [hasMounted, setHasMounted] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -36,7 +36,11 @@ const ProjectCard = ({ slug, title, summary, github, image, tech }) => {
         className="card-container"
       >
         <figure className="img-container">
-          <img src={image} alt={title} className="card-img" />
+          <img
+            src={image}
+            alt={title}
+            className="card-img"
+          />
         </figure>
         <div className="project-info-container">
           <h2 className="project-title">
@@ -67,15 +71,20 @@ const ProjectCard = ({ slug, title, summary, github, image, tech }) => {
             </div>
 
             <div className="group">
-              <button
-                onClick={() => (window.location.href = "")}
+              {demo && (
+                <button
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open(`${demo}`, "_blank");
+                }}
                 className="project-card-btn"
               >
-                <span className="btn-icon">
-                  <BsFillLightningChargeFill />
-                </span>
-                Demo
-              </button>
+                  <span className="btn-icon">
+                    <BsFillLightningChargeFill />
+                  </span>
+                  Demo
+                </button>
+              )}
             </div>
           </div>
         </div>

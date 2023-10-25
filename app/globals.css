@@ -62,7 +62,7 @@ body {
 }
 
 .nav-links-container {
-  @apply flex justify-between gap-5 w-full sm:w-min text-black/80 items-center ;
+  @apply flex justify-between gap-5 w-full sm:w-min text-black/80 items-center;
 }
 
 .nav-links {
@@ -71,11 +71,11 @@ body {
 
 /* HERO SECTION */
 .hero-container {
-  @apply flex flex-col gap-4;
+  @apply flex flex-col gap-3;
 }
 
 .hero-image {
-  @apply rounded-3xl -ml-2;
+  @apply rounded-3xl;
 }
 
 .hero-title {
@@ -106,11 +106,11 @@ body {
 }
 
 .img-container {
-  @apply sm:w-1/2 w-full sm:h-auto h-auto;
+  @apply sm:w-1/2 w-full sm:h-auto h-auto overflow-hidden;
 }
 
 .card-img {
-  @apply rounded-sm shadow-md;
+  @apply rounded-sm shadow-md hover:scale-[101%] transition duration-700 ease-in-out;
 }
 
 .project-info-container {

@@ -11,6 +11,7 @@ export async function getProjects() {
         title,
         "slug": slug.current,
         github,
+        demo,
         summary,
         "image": image.asset->url,
         "content": content[]{
@@ -34,6 +35,7 @@ export async function getProject(slug) {
             title,
             "slug": slug.current,
             github,
+            demo,
             summary,
             "image": image.asset->url,
             "content": content[]{

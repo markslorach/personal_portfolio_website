@@ -42,6 +42,11 @@ const projects = {
       type: "url",
     },
     {
+      name: "demo",
+      title: "Demo",
+      type: "url",
+    },
+    {
       name: "content",
       title: "Content",
       type: "array",

@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard";
 import { getProjects } from "@/sanity/sanity-utils";
 
 export const revalidate = 0;
-export const dynamic = 'force-dynamic';
+export const dynamic = "force-dynamic";
 
 export default function ProjectList({ showAll }) {
   const [projects, setProjects] = useState([]);
@@ -11,9 +11,13 @@ export default function ProjectList({ showAll }) {
   useEffect(() => {
     const fetchData = async () => {
       const fetchedProjects = await getProjects();
-      const sortedProjects = fetchedProjects.sort((a, b) => Number(a.id) - Number(b.id));
-      const displayedProjects = showAll ? sortedProjects : sortedProjects.slice(0, 3);
-      console.log(displayedProjects)
+      const sortedProjects = fetchedProjects.sort(
+        (a, b) => Number(a.id) - Number(b.id)
+      );
+      const displayedProjects = showAll
+        ? sortedProjects
+        : sortedProjects.slice(0, 3);
+      console.log(displayedProjects);
       setProjects(displayedProjects);
     };
 

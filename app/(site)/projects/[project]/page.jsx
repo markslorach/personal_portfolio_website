@@ -44,7 +44,7 @@ export default async function Project({ params }) {
               )}
             </div>
           </section>
-          <h1 className="text-xl sm:text-3xl mb-5 font-semibold dark-text-primary light-text-primary tracking-wide">
+          <h1 className="text-2xl sm:text-3xl mb-5 font-semibold dark-text-primary light-text-primary tracking-wide">
             {project.title}
           </h1>
 

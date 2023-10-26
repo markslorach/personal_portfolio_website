@@ -31,7 +31,7 @@ export const ContactForm = () => {
   return (
     <section className="flex flex-wrap sm:flex-nowrap gap-20 sm:gap-8">
       <aside className="w-full sm:w-1/2 dark-text-primary">
-        <h1 className="text-4xl tracking-wide font-semibold">Let's chat!</h1>
+        <h1 className="text-3xl sm:text-4xl tracking-wide font-semibold">Let's chat!</h1>
         <br />
         <p className="tracking-wide font-light leading-normal text-[17px] dark-text-secondary">
           I'm always happy to chat so please feel free to fill in the contact

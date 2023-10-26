@@ -4,6 +4,7 @@ import { PortableText } from "@portabletext/react";
 import { RichTextComponents } from "../../components/RichTextComponents";
 import { FaGithub } from "react-icons/fa";
 import { BsFillLightningChargeFill } from "react-icons/bs";
+import Link from "next/link";
 
 export const revalidate = 0;
 
@@ -18,12 +19,14 @@ export default async function Project({ params }) {
           <ImageSlider images={project.images} />
           <section className="mb-20">
             <div className="flex gap-3">
+            <Link href={project.github} target="_blank">
               <button className="project-card-btn">
                 <span className="btn-icon">
                   <FaGithub />
                 </span>
                 <span>GitHub</span>
               </button>
+              </Link>
 
               {project.demo && (
                 <button

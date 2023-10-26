@@ -22,7 +22,7 @@ const ProfilePage = () => {
             user-friendly applications during my studies. The pace of the course
             allowed me to pick up skills quickly and demonstrate my
             understanding through creating{" "}
-            <strong className="font-normal text-blue-400 hover:text-blue-300 transition duration-300 ease-in-out">
+            <strong className="font-semibold text-blue-400 hover:text-blue-300 transition duration-300 ease-in-out">
               <Link href={"/projects"}>full-stack projects</Link>
             </strong>
             .

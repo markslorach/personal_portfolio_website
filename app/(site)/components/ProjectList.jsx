@@ -17,7 +17,7 @@ export default function ProjectList({ showAll }) {
       const displayedProjects = showAll
         ? sortedProjects
         : sortedProjects.slice(0, 3);
-      console.log(displayedProjects);
+      // console.log(displayedProjects);
       setProjects(displayedProjects);
     };
 

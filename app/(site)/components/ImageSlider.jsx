@@ -3,13 +3,13 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { RiArrowLeftSFill, RiArrowRightSFill } from "react-icons/ri";
 
-export default function ImageSlider({ image }) {
+export default function ImageSlider({ images }) {
   const [index, setIndex] = useState(0);
 
   const handleKeyPress = (e) => {
     if (e.key === "ArrowLeft" && index > 0) {
       setIndex(index - 1);
-    } else if (e.key === "ArrowRight" && index + 1 < image.length) {
+    } else if (e.key === "ArrowRight" && index + 1 < images.length) {
       setIndex(index + 1);
     }
   };
@@ -40,7 +40,7 @@ export default function ImageSlider({ image }) {
       animate="show"
       variants={animateImageIn}
     >
-      <img src={image} className="w-full" alt="Feature" />
+      <img src={images[0].asset.url} className="w-full" alt="Feature" />
 
       <motion.button
         initial={{ opacity: 0 }}

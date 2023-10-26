@@ -25,14 +25,19 @@ const projects = {
       type: "string",
     },
     {
-      name: "image",
-      title: "Image",
-      type: "image",
-      fields: [
+      name: "images",
+      title: "Images",
+      type: "array",
+      of: [
         {
-          name: "alt",
-          title: "Alt",
-          type: "string",
+          type: "image",
+          fields: [
+            {
+              name: "alt",
+              title: "Alt",
+              type: "string",
+            },
+          ],
         },
       ],
     },

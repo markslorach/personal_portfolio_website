@@ -46,7 +46,7 @@ export const NavBar = () => {
             <ul className="flex gap-5 sm:flex-none">
               <li>
                 <Link className="nav-links hidden sm:inline" href="/profile">
-                  Profile
+                  About
                 </Link>
               </li>
               <li>
@@ -77,7 +77,7 @@ export const NavBar = () => {
               <ul className="h-auto w-full flex flex-col gap-3 pt-8 dark-text-primary">
                 <li>
                   <Link className="nav-links" href="/profile" onClick={closeNav}>
-                    Profile
+                    About
                   </Link>
                 </li>
                 <li>

@@ -15,7 +15,7 @@ const motionSettings = {
   transition: { duration: 0.5 },
 };
 
-const ProjectCard = ({ slug, title, summary, github, demo, image }) => {
+const ProjectCard = ({ slug, title, summary, github, demo, images }) => {
   const [hasMounted, setHasMounted] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -37,7 +37,7 @@ const ProjectCard = ({ slug, title, summary, github, demo, image }) => {
       >
         <figure className="img-container">
           <img
-            src={image}
+            src={images[0].asset.url}
             alt={title}
             className="card-img"
           />

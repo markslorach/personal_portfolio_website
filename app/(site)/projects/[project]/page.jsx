@@ -15,7 +15,7 @@ export default async function Project({ params }) {
     <main>
       <div className="flex justify-center my-28 mx-5">
         <div className="w-[680px] flex flex-col">
-          <ImageSlider image={project.image} />
+          <ImageSlider images={project.images} />
           <section className="mb-20">
             <div className="flex gap-3">
               <button className="project-card-btn">

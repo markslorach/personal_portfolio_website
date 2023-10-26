@@ -33,7 +33,7 @@ const ProfilePage = () => {
             <strong className="font-normal text-white/90">Tailwind CSS</strong>, and how to
             incorporate{" "}
             <strong className="font-normal text-white/90">Content Management Systems</strong> to
-            create dynamic content. I love the speed, modularity and flexibility
+            create dynamic content. I love the speed, modularity and flexibility that
             frameworks provide.
           </p>
           <p className="mb-5">

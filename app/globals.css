@@ -2,25 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.blink {
-  -webkit-animation: blink-animation 1.2s steps(5, start) infinite;
-  animation: blink-animation 1.2s steps(5, start) infinite;
-}
-@keyframes blink-animation {
-  to {
-    visibility: hidden;
-  }
-}
-@-webkit-keyframes blink-animation {
-  to {
-    visibility: hidden;
-  }
-}
 
 /* NAVIGATION */
 
 .nav-container {
-  @apply flex justify-between items-center py-6 bg-slate-100 dark:bg-slate-900;
+  @apply flex justify-between items-center py-6 bg-slate-50 dark:bg-slate-900;
 }
 
 .nav-logo {
@@ -49,6 +35,23 @@
 
 .dark-mode-toggle {
   @apply p-1.5 ml-2 bg-slate-200 rounded-md;
+}
+
+/* CODE BOX */
+
+.blink {
+  -webkit-animation: blink-animation 1.2s steps(5, start) infinite;
+  animation: blink-animation 1.2s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
 
 .code-box-link {

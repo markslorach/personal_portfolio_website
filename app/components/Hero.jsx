@@ -13,7 +13,7 @@ export const Hero = () => {
         className="rounded-3xl -ml-2"
       />
       <h1 className="hero-title">
-        Hello! I'm Mark, a full-stack software developer based in <span className="text-blue-400"> Scotland</span>.
+        Hello! I'm Mark, a design and user experience focused full-stack software developer based in <span className="text-blue-400"> Scotland</span>.
       </h1>
       </div>
 
@@ -22,7 +22,3 @@ export const Hero = () => {
     </section>
   );
 };
-
-{
-  /* <span className='wave'>👋</span> */
-}

@@ -10,8 +10,8 @@ export const ProjectList = () => {
 
   return (
     <section>
-    <h2 className='text-xl font-semibold text-black/70 dark:text-white/80 tracking-wide'>Recent projects</h2>
-    <div className='h-60'>
+    <h2 className='text-xl font-semibold mb-1 text-black/70 dark:text-white/80 tracking-wide'>Recent projects</h2>
+    <div>
       {projectList}
     </div>
     </section>

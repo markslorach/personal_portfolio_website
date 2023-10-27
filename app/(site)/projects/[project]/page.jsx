@@ -17,9 +17,11 @@ export default async function Project({ params }) {
       <div className="flex justify-center my-28 mx-5">
         <div className="w-[680px] flex flex-col">
           <ImageSlider images={project.images} />
-          <h1 className="text-2xl sm:text-3xl mb-5 font-semibold dark-text-primary light-text-primary tracking-wide">
-          <section className="mb-20">
-            <div className="flex gap-3 justify-end">
+          <h1 className="text-2xl sm:text-3xl mb-5 mt-24 font-semibold dark-text-primary light-text-primary tracking-wide">
+            {project.title}
+          </h1>
+          <section className="mb-5">
+            <div className="flex gap-3">
             <Link href={project.github} target="_blank">
               <button className="project-card-btn">
                 <span className="btn-icon">
@@ -45,8 +47,6 @@ export default async function Project({ params }) {
               )}
             </div>
           </section>
-            {project.title}
-          </h1>
 
           <PortableText
             value={project.content}

@@ -9,6 +9,7 @@ module.exports = {
  
   theme: {
     extend: {
+      dark: 'class'
     },
   },
   plugins: [require('daisyui')],

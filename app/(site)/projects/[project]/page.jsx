@@ -23,7 +23,7 @@ export default async function Project({ params }) {
           <section className="mb-5">
             <div className="flex gap-3">
             <Link href={project.github} target="_blank">
-              <button className="project-card-btn">
+              <button aria-label="GitHub" className="project-card-btn">
                 <span className="btn-icon">
                   <FaGithub />
                 </span>
@@ -32,7 +32,7 @@ export default async function Project({ params }) {
               </Link>
 
               {project.demo && (
-                <button
+                <button aria-label="Project Demo"
                   onClick={(e) => {
                     e.preventDefault();
                     window.open(`${project.demo}`, "_blank");

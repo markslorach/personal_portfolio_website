@@ -24,7 +24,7 @@ export const NavBar = () => {
             </Link>
 
             {!isOpen ? (
-              <motion.button
+              <motion.button aria-label="Open Navigation"
                 onClick={() => setIsOpen(true)}
                 className="dark-text-primary text-2xl sm:hidden"
                 whileTap={{ scale: 0.8 }}
@@ -32,7 +32,7 @@ export const NavBar = () => {
                 <TbMenu2 />
               </motion.button>
             ) : (
-              <motion.button
+              <motion.button aria-label="Close Navigation"
                 onClick={() => setIsOpen(false)}
                 className="dark-text-primary text-2xl sm:hidden"
                 whileTap={{ scale: 0.8 }}

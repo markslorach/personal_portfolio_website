@@ -56,7 +56,7 @@ const ProjectCard = ({ slug, title, summary, github, demo, images }) => {
           <p className="project-summary">{summary}</p>
           <div className="flex gap-3">
             <div className="group">
-              <button
+              <button aria-label="GitHub"
                 onClick={(e) => {
                   e.preventDefault();
                   window.open(`${github}`, "_blank");
@@ -72,7 +72,7 @@ const ProjectCard = ({ slug, title, summary, github, demo, images }) => {
 
             <div className="group">
               {demo && (
-                <button
+                <button aria-label="Project Demo"
                 onClick={(e) => {
                   e.preventDefault();
                   window.open(`${demo}`, "_blank");

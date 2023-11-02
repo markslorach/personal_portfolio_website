@@ -25,7 +25,7 @@ const Footer = () => {
               className="flex items-center hover:text-white/90 transition duration-300 ease-in-out"
               href={"https://www.linkedin.com/in/mfslorach/"}
               target="_blank"
-            >x
+            >
               <button aria-label="LinkedIn profile" className="text-2xl">
                 <FaLinkedin />
               </button>

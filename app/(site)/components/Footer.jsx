@@ -14,6 +14,7 @@ const Footer = () => {
             <Link
               className="flex items-center hover:text-white/90 transition duration-300 ease-in-out"
               href={"https://github.com/mfslorach"}
+              target="_blank"
             >
               <button aria-label="Github profile" className="text-2xl">
                 <FaGithubSquare />
@@ -23,7 +24,8 @@ const Footer = () => {
             <Link
               className="flex items-center hover:text-white/90 transition duration-300 ease-in-out"
               href={"https://www.linkedin.com/in/mfslorach/"}
-            >
+              target="_blank"
+            >x
               <button aria-label="LinkedIn profile" className="text-2xl">
                 <FaLinkedin />
               </button>

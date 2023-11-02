@@ -24,10 +24,10 @@ const Home = () => {
             Recent projects
           </h2>
           <ProjectList showAll={showAllProjects} />
-          <div className="flex gap-1 items-center mt-4 w-48 dark-text-secondary hover:text-white/90 transition duration-300 ease-in-out ">
+          <div className="flex gap-1 items-center mt-5 w-48 dark-text-secondary hover:text-white/90 transition duration-300 ease-in-out ">
             <Link
               href="/projects"
-              className=" text-base font-normal leading-none tracking-wide"
+              className="text-base font-normal leading-none tracking-wide"
             >
               View all projects
             </Link>

@@ -56,7 +56,7 @@ const ProjectCard = ({ slug, title, summary, github, demo, images }) => {
           <p className="project-summary">{summary}</p>
           <div className="flex gap-3">
             <div className="group">
-              <button aria-label="GitHub"
+              <button aria-label="Project Github"
                 onClick={(e) => {
                   e.preventDefault();
                   window.open(`${github}`, "_blank");

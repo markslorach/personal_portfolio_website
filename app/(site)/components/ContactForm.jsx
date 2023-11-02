@@ -51,7 +51,7 @@ export const ContactForm = () => {
         onSubmit={sendEmail}
       >
         <div className="flex flex-col gap-2">
-          <label className="tracking-wide font-light leading-none">Name</label>
+          <label id="sender name" className="tracking-wide font-light leading-none">Name</label>
           <input
             className="w-full h-12 px-4 rounded-sm bg-white/10"
             type="text"
@@ -60,7 +60,7 @@ export const ContactForm = () => {
           />
         </div>
         <div className="flex flex-col gap-2">
-          <label className="tracking-wide font-light leading-none">Email</label>
+          <label id="sender email address" className="tracking-wide font-light leading-none">Email</label>
           <input
             className="w-full h-12 px-4 rounded-sm bg-white/10"
             type="email"
@@ -69,7 +69,7 @@ export const ContactForm = () => {
           />
         </div>
         <div className="flex flex-col gap-2">
-          <label className="tracking-wide font-light leading-none">
+          <label id="sender message" className="tracking-wide font-light leading-none">
             Message
           </label>
           <textarea
@@ -78,7 +78,7 @@ export const ContactForm = () => {
             required
           />
         </div>
-        <button className="flex gap-2 text-sm font-light leading-none items-center w-min p-2.5 bg-white/10 rounded-sm hover:bg-purple-200/20 transition-colors duration-500 ease-in-out ">
+        <button aria-label="send email" className="flex gap-2 text-sm font-light leading-none items-center w-min p-2.5 bg-white/10 rounded-sm hover:bg-purple-200/20 transition-colors duration-500 ease-in-out ">
           <p className="btn-icon">
             <RiSendPlaneFill />
           </p>

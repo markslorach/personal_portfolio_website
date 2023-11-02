@@ -8,8 +8,10 @@ const ubuntu = Ubuntu({
   weight: ["300", "400", "500", "700"],
 });
 
+
 export const metadata = {
   title: "Mark Slorach | Software Developer",
+  description: "Mark Slorach is a design and user experience focused junior software developer based in Scotland."
 };
 
 export default function RootLayout({ children }) {

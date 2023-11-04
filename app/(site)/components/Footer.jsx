@@ -23,7 +23,7 @@ const Footer = () => {
 
             <Link
               className="flex items-center hover:text-white/90 transition duration-300 ease-in-out"
-              href={"https://www.linkedin.com/in/mfslorach/"}
+              href={"https://www.linkedin.com/in/markslorach/"}
               target="_blank"
             >
               <button aria-label="LinkedIn profile" className="text-2xl">

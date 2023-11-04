@@ -36,7 +36,7 @@ export const ContactForm = () => {
         <p className="tracking-wide font-light leading-normal text-[17px] dark-text-secondary">
           I'm always happy to chat so please feel free to fill in the contact
           form or reach out on{" "}
-          <Link href={"https://www.linkedin.com/in/mfslorach/"} target="_blank">
+          <Link href={"https://www.linkedin.com/in/markslorach/"} target="_blank">
             <strong className="text-gradient text-gradient-hover font-semibold">
               LinkedIn
             </strong>

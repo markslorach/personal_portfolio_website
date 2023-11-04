@@ -10,7 +10,7 @@ export const GetInTouch = () => {
         </Link>
 
         or reach out on
-        <Link href={"https://www.linkedin.com/in/mfslorach/"} target="_blank">
+        <Link href={"https://www.linkedin.com/in/markslorach/"} target="_blank">
           <span className="text-gradient text-gradient-hover"> LinkedIn</span>
         </Link>
         .

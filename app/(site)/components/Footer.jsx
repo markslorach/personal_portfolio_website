@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="flex gap-2">
             <Link
               className="flex items-center hover:text-white/90 transition duration-300 ease-in-out"
-              href={"https://github.com/mfslorach"}
+              href={"https://github.com/markslorach"}
               target="_blank"
             >
               <button aria-label="Github profile" className="text-2xl">

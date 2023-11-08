@@ -8,8 +8,12 @@ body {
 }
 
 /* MAIN STYLES */
-.bg-colour {
+/* .bg-colour {
   @apply bg-[#111827];
+} */
+
+.bg-colour {
+  @apply bg-slate-900;
 }
 
 .dark-text-primary {

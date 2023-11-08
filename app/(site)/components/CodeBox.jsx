@@ -13,7 +13,7 @@ const CodeBox = () => {
         <div className="flex flex-col gap-5 w-full h-full p-5 font-mono text-xs sm:text-sm leading-relaxed sm:leading-normal tracking-wide dark-text-primary">
           <div className="flex flex-col gap-2 ">
             <p>{`> Mark.contact`}</p>
-            <p><span>{`[`}</span>"<span className="code-box-links"><Link href={"/contact"}>{`hello@markslorach.com`}</Link></span>", "<span className="code-box-links"><Link  target='_blank' href={"https://www.linkedin.com/in/mfslorach/"}>{`LinkedIn`}</Link></span>", "<span className="code-box-links"><Link target='_blank' href={"https://github.com/mfslorach"}>{`GitHub`}</Link></span>"<span>{`]`}</span> </p>
+            <p><span>{`[`}</span>"<span className="code-box-links"><Link href={"/contact"}>{`hello@markslorach.com`}</Link></span>", "<span className="code-box-links"><Link  target='_blank' href={"https://www.linkedin.com/in/markslorach/"}>{`LinkedIn`}</Link></span>", "<span className="code-box-links"><Link target='_blank' href={"https://github.com/markslorach"}>{`GitHub`}</Link></span>"<span>{`]`}</span> </p>
           </div>
           <div className="flex flex-col gap-2 ">
             <p>{`> Mark.resume`}</p>
